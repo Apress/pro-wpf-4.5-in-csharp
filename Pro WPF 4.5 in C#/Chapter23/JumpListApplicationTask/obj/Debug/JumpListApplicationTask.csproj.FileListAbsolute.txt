@@ -1,0 +1,1 @@
+D:\Code\Pro WPF\Chapter23\JumpListApplicationTask\bin\Debug\JumpListApplicationTask.exe.config

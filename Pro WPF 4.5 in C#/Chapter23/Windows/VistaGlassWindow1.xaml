@@ -1,0 +1,13 @@
+﻿<Window x:Class="Windows.VistaGlassWindow1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="VistaGlassWindow" Height="300" Width="300"
+    Loaded="OnLoaded" Background="Transparent"
+    >
+  <StackPanel Margin="10">
+    <TextBlock Margin="5">This is some text.</TextBlock>
+    <Button Margin="5" Padding="5">This is a Button</Button>
+    <CheckBox Margin="5">This is a CheckBox</CheckBox>
+  </StackPanel>
+
+</Window>

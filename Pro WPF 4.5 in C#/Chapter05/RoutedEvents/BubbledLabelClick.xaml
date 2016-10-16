@@ -1,0 +1,32 @@
+﻿<Window x:Class="RoutedEvents.BubbledLabelClick"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="BubbledLabelClick" Height="359" Width="329"
+    MouseUp="SomethingClicked"
+    >
+    <Grid Margin="3" MouseUp="SomethingClicked">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition Height="*"></RowDefinition>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition Height="Auto"></RowDefinition>
+      </Grid.RowDefinitions>
+      
+      <Label Margin="5" Background="AliceBlue" BorderBrush="Black" BorderThickness="1" MouseUp="SomethingClicked" HorizontalAlignment="Left" >
+        <StackPanel MouseUp="SomethingClicked" >
+          <TextBlock Margin="3" MouseUp="SomethingClicked" >
+            Image and picture label</TextBlock>
+          <Image Source="happyface.jpg" Stretch="None" 
+                 MouseUp="SomethingClicked" />
+          <TextBlock Margin="3" 
+                     MouseUp="SomethingClicked" >
+            Courtesy of the StackPanel</TextBlock>
+        </StackPanel>
+      </Label>
+
+      
+      <ListBox Margin="5" Name="lstMessages" Grid.Row="1"></ListBox>
+      <CheckBox Margin="5" Grid.Row="2" Name="chkHandle">Handle first event</CheckBox>
+      <Button Click="cmdClear_Click" Grid.Row="3" HorizontalAlignment="Right" Margin="5" Padding="3">Clear List</Button>
+    </Grid>
+</Window>

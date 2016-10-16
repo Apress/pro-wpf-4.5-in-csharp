@@ -1,0 +1,22 @@
+﻿<Window x:Class="DataBinding.BoundTreeView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="BoundTreeView" Height="300" Width="300"
+    xmlns:data="clr-namespace:StoreDatabase;assembly=StoreDatabase"
+    >
+  <Window.Resources>
+    <HierarchicalDataTemplate DataType="{x:Type data:Category}"
+                                ItemsSource="{Binding Path=Products}">
+      <TextBlock Text="{Binding Path=CategoryName}"/>
+    </HierarchicalDataTemplate>
+    <HierarchicalDataTemplate DataType="{x:Type data:Product}"      >
+      <TextBlock Text="{Binding Path=ModelName}" />      
+    </HierarchicalDataTemplate>
+    
+  </Window.Resources>
+  <Grid>
+    <TreeView Name="treeCategories" Margin="5">
+      
+    </TreeView>
+  </Grid>
+</Window>

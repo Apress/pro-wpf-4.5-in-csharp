@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EightBall", "EightBall.csproj", "{7903E710-F81B-437A-98E2-46E2BED72EAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7903E710-F81B-437A-98E2-46E2BED72EAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7903E710-F81B-437A-98E2-46E2BED72EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7903E710-F81B-437A-98E2-46E2BED72EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7903E710-F81B-437A-98E2-46E2BED72EAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,41 @@
+﻿<Window x:Class="Drawing.RadialGradient"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="RadialGradient" Height="534" Width="480"
+    >
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition></ColumnDefinition>
+        <ColumnDefinition Width="Auto"></ColumnDefinition>
+      </Grid.ColumnDefinitions>
+
+      <Ellipse Margin="5"  Stroke="Black" StrokeThickness="1">
+        <Ellipse.Fill>
+          <RadialGradientBrush
+             RadiusX="1" RadiusY="1" >
+            <GradientStop Color="White" Offset="0" />
+            <GradientStop Color="Blue" Offset="1" />
+          </RadialGradientBrush>
+        </Ellipse.Fill>
+      </Ellipse>
+      <TextBlock Grid.Column="1" VerticalAlignment="Center" Margin="5">A Radial Gradient</TextBlock>
+
+      <Ellipse Margin="5" Grid.Row="1" Stroke="Black" StrokeThickness="1">
+        <Ellipse.Fill>
+          <RadialGradientBrush
+             RadiusX="1" RadiusY="1" GradientOrigin="0.7,0.3"
+            >
+            <GradientStop Color="White" Offset="0" />
+            <GradientStop Color="Blue" Offset="1" />
+          </RadialGradientBrush>
+
+        </Ellipse.Fill>
+      </Ellipse>
+      <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Margin="5" TextWrapping="Wrap">A Radial Gradient with an Offset Center</TextBlock>
+      
+    </Grid>
+</Window>

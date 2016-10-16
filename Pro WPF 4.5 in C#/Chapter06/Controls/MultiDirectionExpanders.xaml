@@ -1,0 +1,47 @@
+﻿<Window x:Class="Controls.MultiDirectionExpanders"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MultiDirectionExpanders" Height="327.2" Width="328.8"
+    >
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition></ColumnDefinition>
+      <ColumnDefinition></ColumnDefinition>
+    </Grid.ColumnDefinitions>
+    <Expander Margin="5" Padding="5" Header="Region One"
+              BorderThickness="1" BorderBrush="Black">
+      <TextBlock TextWrapping="Wrap">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        Nam mi sapien, viverra et, lacinia varius, ullamcorper sed, sapien.
+      </TextBlock>
+    </Expander>
+    <Expander Grid.Column="1" 
+      Margin="5" Padding="5" Header="Region Two" ExpandDirection="Right"  
+              BorderThickness="1" BorderBrush="Black">
+      <TextBlock TextWrapping="Wrap">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        Nam mi sapien, viverra et, lacinia varius, ullamcorper sed, sapien.
+      </TextBlock>
+    </Expander>
+    <Expander Grid.Row="1"
+      Margin="5" Padding="5" Header="Region Three" ExpandDirection="Up"
+              BorderThickness="1" BorderBrush="Black">
+      <TextBlock TextWrapping="Wrap">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        Nam mi sapien, viverra et, lacinia varius, ullamcorper sed, sapien.        
+      </TextBlock>
+    </Expander>
+    <Expander Grid.Row="1" Grid.Column="1" 
+      Margin="5" Padding="5" Header="Region Three" ExpandDirection="Left" 
+              BorderThickness="1" BorderBrush="Black">
+      <TextBlock TextWrapping="Wrap">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        Nam mi sapien, viverra et, lacinia varius, ullamcorper sed, sapien.        
+      </TextBlock>
+    </Expander>
+  </Grid>
+</Window>

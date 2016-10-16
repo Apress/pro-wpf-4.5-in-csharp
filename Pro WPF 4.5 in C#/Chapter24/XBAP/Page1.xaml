@@ -1,0 +1,13 @@
+﻿<Page x:Class="XBAP.Page1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Page1"
+    >
+    <StackPanel HorizontalAlignment="Left">
+      <Button Margin="5" Click="cmdWrite_Click">Attempt to write to a file</Button>
+      <Button Margin="5" Click="cmdWriteSafely_Click">Write to a file safely</Button>
+      <Button Margin="5" Click="cmdReadSafely_Click">Read from file safely</Button>
+      <TextBlock Margin="5">Test a popup <Hyperlink NavigateUri="PopupTest.xaml">here</Hyperlink>.
+      </TextBlock>
+    </StackPanel>
+</Page>

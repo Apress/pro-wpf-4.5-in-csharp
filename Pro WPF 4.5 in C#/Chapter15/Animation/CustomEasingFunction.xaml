@@ -1,0 +1,34 @@
+﻿<Window x:Class="Animation.CustomEasingFunction"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CustomEasingFunction" Height="276" Width="600"
+        xmlns:local="clr-namespace:Animation">
+    
+        <Window.Triggers>
+            <EventTrigger RoutedEvent="Window.Loaded">
+                <EventTrigger.Actions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                        <DoubleAnimation
+            Storyboard.TargetName="ellipse1" Storyboard.TargetProperty="(Canvas.Left)"
+            To="500" Duration="0:0:10">
+                        </DoubleAnimation>
+                        <DoubleAnimation
+            Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(Canvas.Left)"
+            To="500" Duration="0:0:10">
+                            <DoubleAnimation.EasingFunction>
+                                <local:RandomJitterEase EasingMode="EaseIn" Jitter="1000"></local:RandomJitterEase>
+                            </DoubleAnimation.EasingFunction>
+                            </DoubleAnimation>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+        </Window.Triggers>
+        <Canvas Margin="10">
+            <Ellipse Name="ellipse1" Canvas.Left="0" Fill="Red" Width="20" Height="20"></Ellipse>
+
+            <Ellipse Name="ellipse2" Canvas.Top="100" Canvas.Left="0" Fill="Red" Width="20" Height="20"></Ellipse>
+        </Canvas>
+
+</Window>

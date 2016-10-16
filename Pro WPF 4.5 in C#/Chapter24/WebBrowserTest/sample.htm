@@ -1,0 +1,62 @@
+<!-- saved from url=(0016)http://localhost -->
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 1</title>
+<script language="JavaScript" fptype="dynamicanimation">
+<!--
+function dynAnimation() {}
+function clickSwapImg() {}
+//-->
+</script>
+
+<script language="JavaScript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+</head>
+
+<body onload="FP_preloadImgs(/*url*/'buttonD.jpg', /*url*/'buttonE.jpg', /*url*/'button11.jpg', /*url*/'button12.jpg', /*url*/'button14.jpg', /*url*/'button15.jpg', /*url*/'button25.jpg', /*url*/'button26.jpg'); dynAnimation()" language="Javascript1.2" bgcolor="#FFEAFF">
+
+<p style="position: relative !important;  margin-top: 0; margin-bottom: 0" dynamicanimation="fpAnimelasticRightFP2" id="fpAnimelasticRightFP2" language="Javascript1.2">
+<img onClick='window.external.WebClick("Option1")' border="0" id="img1" src="buttonC.jpg" height="20" width="100" alt="Option 1" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'buttonD.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'buttonC.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'buttonE.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'buttonD.jpg')" fp-style="fp-btn: Border Left 4" fp-title="Option 1"><br>
+&nbsp; <span style="vertical-align: super"><font face="Tahoma" size="1">&nbsp;
+</font><b><font face="Verdana" size="1">Click here to learn about the new 
+WebBrowser control.</font></b></span></p>
+<p style="position: relative !important;  margin-top: 0; margin-bottom: 0" dynamicanimation="fpAnimelasticRightFP4" id="fpAnimelasticRightFP4" language="Javascript1.2">
+<img onClick='window.external.WebClick("Option2")' border="0" id="img2" src="button10.jpg" height="20" width="100" alt="Option 2" onmouseover="FP_swapImg(1,0,/*id*/'img2',/*url*/'button11.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img2',/*url*/'button10.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img2',/*url*/'button12.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img2',/*url*/'button11.jpg')" fp-style="fp-btn: Border Left 4" fp-title="Option 2"><br>
+&nbsp;&nbsp;&nbsp; <span style="vertical-align: super"><b>
+<font face="Verdana" size="1">Click here to use the WebBrowser control to scrape 
+information from a web page.</font></b></span></p>
+<p onClick='window.external.WebClick("Option3")' style="position: relative !important; visibility: hidden; margin-top: 0; margin-bottom: 0" dynamicanimation="fpAnimelasticRightFP5" id="fpAnimelasticRightFP5" language="Javascript1.2">
+<img border="0" id="img3" src="button13.jpg" height="20" width="100" alt="Option 3" onmouseover="FP_swapImg(1,0,/*id*/'img3',/*url*/'button14.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img3',/*url*/'button13.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img3',/*url*/'button15.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img3',/*url*/'button14.jpg')" fp-style="fp-btn: Border Left 4" fp-title="Option 3"><br>
+&nbsp;&nbsp;&nbsp; <span style="vertical-align: super"><b>
+<font face="Verdana" size="1">Click here to learn how you can fuse together Web 
+and Windows interfaces.</font></b></span></p>
+<p style="position: relative !important; visibility: hidden" dynamicanimation="fpAnimelasticBottomFP1" id="fpAnimelasticBottomFP1" language="Javascript1.2">
+<img onClick='window.external.WebClick("About")' border="0" id="img4" src="button24.jpg" height="20" width="100" alt="About" fp-style="fp-btn: Embossed Capsule 2; fp-bgcolor: #FFEAFF" fp-title="About" onmouseover="FP_swapImg(1,0,/*id*/'img4',/*url*/'button25.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img4',/*url*/'button24.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img4',/*url*/'button26.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img4',/*url*/'button25.jpg')"></p>
+
+</body>
+
+</html>

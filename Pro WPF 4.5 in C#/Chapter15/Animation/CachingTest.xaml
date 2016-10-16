@@ -1,0 +1,38 @@
+﻿<Window x:Class="Animation.CachingTest" Name="window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Animation"
+        Title="CachingTest" Height="600" Width="800">
+    
+    <Window.Resources>
+        <local:ArithmeticConverter x:Key="converter"></local:ArithmeticConverter>              
+    </Window.Resources>
+    
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Window.Loaded">
+            <BeginStoryboard>
+                <Storyboard>
+                    <DoubleAnimation Storyboard.TargetProperty="(Canvas.Left)" Storyboard.TargetName="rect" AutoReverse="True" RepeatBehavior="Forever"
+                To="{Binding ElementName=window,Path=Width,Converter={StaticResource converter},ConverterParameter=-100}"
+                               Duration="0:0:15"></DoubleAnimation>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Canvas Name="canvas">
+            <Path Name="pathBackground" Stroke="DarkRed" StrokeThickness="1" ></Path>
+
+            <Rectangle Name="rect" Canvas.Left="10" Canvas.Top="100" Fill="Blue" Width="75" Height="75">                
+            </Rectangle>
+        </Canvas>
+
+        <CheckBox Grid.Row="2" x:Name="chkCache" Content="Enable Caching"
+		 IsChecked="False" Click="chkCache_Click"></CheckBox>
+    </Grid>
+</Window>

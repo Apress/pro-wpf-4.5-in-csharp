@@ -1,0 +1,12 @@
+﻿<Window x:Class="SoundAndVideo.SoundPlayerTest"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="SoundPlayerTest" Height="300" Width="300"
+        Closed="window_Closed"
+    >
+    <StackPanel Margin="5">
+      <Button Click="cmdPlayAudio_Click">Play Audio Synchronously</Button>
+      <Button Click="cmdPlayAudioAsync_Click">Play Audio Asynchronously</Button>      
+      <Button Click="cmdPlayWithMediaPlayer_Click">Play with MediaPlayer</Button>
+    </StackPanel>
+</Window>

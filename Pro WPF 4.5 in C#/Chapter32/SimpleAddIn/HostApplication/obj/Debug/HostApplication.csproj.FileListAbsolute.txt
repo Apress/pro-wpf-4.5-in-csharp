@@ -1,0 +1,13 @@
+D:\Code\Pro WPF\Chapter32\SimpleAddIn\Output\HostApplication.exe
+D:\Code\Pro WPF\Chapter32\SimpleAddIn\Output\HostApplication.pdb
+D:\Code\Pro WPF\Chapter32\SimpleAddIn\HostApplication\obj\Debug\HostApplication.csprojResolveAssemblyReference.cache
+D:\Code\Pro WPF\Chapter32\SimpleAddIn\HostApplication\obj\Debug\Window1.baml
+D:\Code\Pro WPF\Chapter32\SimpleAddIn\HostApplication\obj\Debug\Window1.g.cs
+D:\Code\Pro WPF\Chapter32\SimpleAddIn\HostApplication\obj\Debug\App.g.cs
+D:\Code\Pro WPF\Chapter32\SimpleAddIn\HostApplication\obj\Debug\HostApplication_MarkupCompile.cache
+D:\Code\Pro WPF\Chapter32\SimpleAddIn\HostApplication\obj\Debug\HostApplication.g.resources
+D:\Code\Pro WPF\Chapter32\SimpleAddIn\HostApplication\obj\Debug\HostApplication.Properties.Resources.resources
+D:\Code\Pro WPF\Chapter32\SimpleAddIn\HostApplication\obj\Debug\HostApplication.csproj.GenerateResource.Cache
+D:\Code\Pro WPF\Chapter32\SimpleAddIn\HostApplication\obj\Debug\HostApplication.exe
+D:\Code\Pro WPF\Chapter32\SimpleAddIn\HostApplication\obj\Debug\HostApplication.pdb
+D:\Code\Pro WPF\Chapter32\SimpleAddIn\Output\HostApplication.exe.config

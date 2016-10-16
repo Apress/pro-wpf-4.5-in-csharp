@@ -1,0 +1,209 @@
+﻿<Window x:Class="Animation.ExpandElement"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ExpandElement" Height="423.2" Width="488.8" 
+    >
+  <Window.Triggers>
+    <EventTrigger RoutedEvent="Window.Loaded">
+      <EventTrigger.Actions>
+        <BeginStoryboard>
+          <Storyboard SpeedRatio="1.5">
+            <DoubleAnimation Storyboard.TargetName="element"
+                                Storyboard.TargetProperty="Opacity"
+                                From="0.2" To="1" Duration="0:0:2.5"></DoubleAnimation>
+            <DoubleAnimation Storyboard.TargetName="element"
+                                Storyboard.TargetProperty="RenderTransform.Children[1].Angle"
+                                From="70" To="0" Duration="0:0:2" ></DoubleAnimation>
+            
+            <DoubleAnimation Storyboard.TargetName="element"
+                                Storyboard.TargetProperty="RenderTransform.Children[0].ScaleX"
+                                From="0" To="1" Duration="0:0:2" AccelerationRatio="1"></DoubleAnimation>
+            <DoubleAnimation Storyboard.TargetName="element"
+                                Storyboard.TargetProperty="RenderTransform.Children[0].ScaleY"
+                                From="0" To="1" Duration="0:0:2" AccelerationRatio="1"></DoubleAnimation>
+            
+            <DoubleAnimation Storyboard.TargetName="element"
+                                            Storyboard.TargetProperty="RenderTransform.Children[0].ScaleX"
+                                            To="0.98" BeginTime="0:0:2" Duration="0:0:0.05"  DecelerationRatio="1"></DoubleAnimation>
+            <DoubleAnimation Storyboard.TargetName="element"
+                                Storyboard.TargetProperty="RenderTransform.Children[0].ScaleY"
+                                To="0.98" BeginTime="0:0:2" Duration="0:0:0.05" DecelerationRatio="1"></DoubleAnimation>
+            <DoubleAnimation Storyboard.TargetName="element"
+                                            Storyboard.TargetProperty="RenderTransform.Children[0].ScaleX"
+                                            To="1" BeginTime="0:0:2.05" Duration="0:0:0.2"  AccelerationRatio="1"></DoubleAnimation>
+            <DoubleAnimation Storyboard.TargetName="element"
+                                Storyboard.TargetProperty="RenderTransform.Children[0].ScaleY"
+                                To="1" BeginTime="0:0:2.05" Duration="0:0:0.2" AccelerationRatio="1"></DoubleAnimation>
+
+          </Storyboard>
+        </BeginStoryboard>
+      </EventTrigger.Actions>
+    </EventTrigger>
+  </Window.Triggers>
+    
+    <Grid>
+      <!--<Button Name="element">
+        <Button.Content>Text</Button.Content>
+        <Button.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform ScaleX="0" ScaleY="0"></ScaleTransform>
+            <TranslateTransform></TranslateTransform>
+            <RotateTransform Angle="90"></RotateTransform>
+          </TransformGroup>
+        </Button.RenderTransform>
+      </Button>-->
+      <Border  Name="element" Margin="3" Background="LightGoldenrodYellow"
+               BorderBrush="DarkBlue" BorderThickness="2" CornerRadius="5" >
+        <Border.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform></ScaleTransform>            
+            <RotateTransform></RotateTransform>
+          </TransformGroup>
+        </Border.RenderTransform>
+      <FlowDocumentScrollViewer IsToolBarVisible="True">
+        <FlowDocument>
+
+          <Paragraph xml:space="preserve">The <Italic>foof</Italic> feature is indispensable. You can configure the foof feature using the Foof Options dialog box.</Paragraph>
+          <BlockUIContainer>
+            <Button HorizontalAlignment="Left" Padding="5">Open Foof Options</Button>
+          </BlockUIContainer>
+
+
+          <Paragraph FontSize="20pt">Largest Cities in the Year 100</Paragraph>
+          <Table>
+            <Table.Columns>
+              <TableColumn Width="*"></TableColumn>
+              <TableColumn Width="3*"></TableColumn>
+              <TableColumn Width="*"></TableColumn>
+            </Table.Columns>
+
+            <TableRowGroup  >
+              <TableRow FontWeight="Bold" >
+                <TableCell >
+                  <Paragraph>Rank</Paragraph>
+                </TableCell>
+                <TableCell>
+                  <Paragraph>Name</Paragraph>
+                </TableCell>
+                <TableCell>
+                  <Paragraph>Population</Paragraph>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                  <Paragraph>1</Paragraph>
+                </TableCell>
+                <TableCell>
+                  <Paragraph>Rome</Paragraph>
+                </TableCell>
+                <TableCell>
+                  <Paragraph>450,000</Paragraph>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                  <Paragraph>2</Paragraph>
+                </TableCell>
+                <TableCell>
+                  <Paragraph>Luoyang (Honan), China</Paragraph>
+                </TableCell>
+                <TableCell>
+                  <Paragraph>420,000</Paragraph>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                  <Paragraph>3</Paragraph>
+                </TableCell>
+                <TableCell>
+                  <Paragraph>Seleucia (on the Tigris), Iraq</Paragraph>
+                </TableCell>
+                <TableCell>
+                  <Paragraph>250,000</Paragraph>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                  <Paragraph>4</Paragraph>
+                </TableCell>
+                <TableCell>
+                  <Paragraph>Alexandria, Egypt</Paragraph>
+                </TableCell>
+                <TableCell>
+                  <Paragraph>250,000</Paragraph>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                  <Paragraph>5</Paragraph>
+                </TableCell>
+                <TableCell>
+                  <Paragraph>Antioch, Turkey</Paragraph>
+                </TableCell>
+                <TableCell>
+                  <Paragraph>150,000</Paragraph>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                  <Paragraph>6</Paragraph>
+                </TableCell>
+                <TableCell>
+                  <Paragraph>Anuradhapura, Sri Lanka</Paragraph>
+                </TableCell>
+                <TableCell>
+                  <Paragraph>130,000</Paragraph>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                  <Paragraph>7</Paragraph>
+                </TableCell>
+                <TableCell>
+                  <Paragraph>Peshawar, Pakistan</Paragraph>
+                </TableCell>
+                <TableCell>
+                  <Paragraph>120,000</Paragraph>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                  <Paragraph>8</Paragraph>
+                </TableCell>
+                <TableCell>
+                  <Paragraph>Carthage, Tunisia</Paragraph>
+                </TableCell>
+                <TableCell>
+                  <Paragraph>100,000</Paragraph>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                  <Paragraph>9</Paragraph>
+                </TableCell>
+                <TableCell>
+                  <Paragraph>Suzhou, China</Paragraph>
+                </TableCell>
+                <TableCell>
+                  <Paragraph>n/a</Paragraph>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                  <Paragraph>10</Paragraph>
+                </TableCell>
+                <TableCell>
+                  <Paragraph>Smyrna, Turkey</Paragraph>
+                </TableCell>
+                <TableCell>
+                  <Paragraph>90,000</Paragraph>
+                </TableCell>
+              </TableRow>
+            </TableRowGroup>
+          </Table>
+        </FlowDocument>
+      </FlowDocumentScrollViewer>
+    </Border>
+
+    </Grid>
+</Window>

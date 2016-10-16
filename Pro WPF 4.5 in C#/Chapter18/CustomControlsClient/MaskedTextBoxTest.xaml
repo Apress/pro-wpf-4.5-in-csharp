@@ -1,0 +1,10 @@
+﻿<Window x:Class="CustomControlsClient.MaskedTextBoxTest"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MaskedTextBoxTest" Height="300" Width="300"
+     xmlns:lib="clr-namespace:CustomControls;assembly=CustomControls">
+  <StackPanel Margin="10">
+      <lib:MaskedTextBox Mask="(999) 000-0000" x:Name="maskedTextBox"></lib:MaskedTextBox>
+    
+  </StackPanel>
+</Window>

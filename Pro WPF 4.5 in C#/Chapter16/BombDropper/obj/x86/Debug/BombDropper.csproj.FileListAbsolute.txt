@@ -1,0 +1,16 @@
+D:\Code\Pro WPF\Chapter16\BombDropper\bin\Debug\BombDropper.exe
+D:\Code\Pro WPF\Chapter16\BombDropper\bin\Debug\BombDropper.pdb
+D:\Code\Pro WPF\Chapter16\BombDropper\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Code\Pro WPF\Chapter16\BombDropper\obj\x86\Debug\Bomb.baml
+D:\Code\Pro WPF\Chapter16\BombDropper\obj\x86\Debug\MainWindow.baml
+D:\Code\Pro WPF\Chapter16\BombDropper\obj\x86\Debug\Bomb.g.cs
+D:\Code\Pro WPF\Chapter16\BombDropper\obj\x86\Debug\MainWindow.g.cs
+D:\Code\Pro WPF\Chapter16\BombDropper\obj\x86\Debug\App.g.cs
+D:\Code\Pro WPF\Chapter16\BombDropper\obj\x86\Debug\BombDropper_MarkupCompile.cache
+D:\Code\Pro WPF\Chapter16\BombDropper\obj\x86\Debug\BombDropper.g.resources
+D:\Code\Pro WPF\Chapter16\BombDropper\obj\x86\Debug\BombDropper.Properties.Resources.resources
+D:\Code\Pro WPF\Chapter16\BombDropper\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Code\Pro WPF\Chapter16\BombDropper\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Code\Pro WPF\Chapter16\BombDropper\obj\x86\Debug\BombDropper.exe
+D:\Code\Pro WPF\Chapter16\BombDropper\obj\x86\Debug\BombDropper.pdb
+D:\Code\Pro WPF\Chapter16\BombDropper\bin\Debug\BombDropper.exe.config

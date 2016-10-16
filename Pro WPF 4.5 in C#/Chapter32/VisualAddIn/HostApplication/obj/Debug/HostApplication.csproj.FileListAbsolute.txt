@@ -1,0 +1,1 @@
+D:\Code\Pro WPF\Chapter32\VisualAddIn\Output\HostApplication.exe.config

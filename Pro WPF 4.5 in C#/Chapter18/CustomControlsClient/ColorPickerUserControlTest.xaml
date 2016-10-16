@@ -1,0 +1,16 @@
+﻿<Window x:Class="CustomControlsClient.ColorPickerUserControlTest"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:lib="clr-namespace:CustomControls;assembly=CustomControls"
+    Title="CustomControlsClient" Height="300" Width="300"
+        
+    >
+  <StackPanel>
+      <lib:ColorPickerUserControl 
+        Name="colorPicker" Margin="2" Padding="3" ColorChanged="colorPicker_ColorChanged" Color="Yellow"></lib:ColorPickerUserControl>
+    <Button Click="cmdGet_Click" Margin="5,20,5,0" Padding="2">Get Color</Button>
+    <Button Click="cmdSet_Click" Margin="5,0,5,0" Padding="2">Reset Color</Button>
+    <Button Command="Undo" CommandTarget="{Binding ElementName=colorPicker}"  Margin="5,0,5,0" Padding="2">Undo</Button>
+    <TextBlock Name="lblColor" Margin="10"></TextBlock>
+  </StackPanel>
+</Window>

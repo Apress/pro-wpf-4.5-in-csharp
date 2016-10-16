@@ -1,0 +1,63 @@
+﻿<Window x:Class="Windows.TransparentWithShapes"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="NonRectangularWindowSample" Width="210" Height="170"
+	
+	WindowStyle="None"
+	AllowsTransparency="True"
+	Background="Transparent"
+    >
+	<Grid>
+    
+		<!--Non-Rectangular window edge, create with paths-->
+		<Path Stroke="DarkGray" StrokeThickness="1" SnapsToDevicePixels="True">
+
+      <Path.Fill>
+        <LinearGradientBrush StartPoint="0.2,0" EndPoint="0.8,1" >
+          <LinearGradientBrush.GradientStops>
+            <GradientStop Color="White"  Offset="0"></GradientStop>
+            <GradientStop Color="White"  Offset="0.45"></GradientStop>
+            <GradientStop Color="LightBlue" Offset="0.9"></GradientStop>
+            <GradientStop Color="Gray" Offset="1"></GradientStop>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </Path.Fill>
+
+      <Path.Data>
+        <PathGeometry>
+          <PathGeometry.Figures>
+            <PathFigure StartPoint="20,0" IsClosed="True">
+              <LineSegment Point="140,0"></LineSegment>
+              <ArcSegment Point="160,20" Size="20,20" SweepDirection="Clockwise"></ArcSegment>
+              <LineSegment Point="160,60"></LineSegment>
+              <ArcSegment Point="140,80" Size="20,20" SweepDirection="Clockwise"></ArcSegment>
+              <LineSegment Point="70,80"></LineSegment>
+              <LineSegment Point="70,130"></LineSegment>
+              <LineSegment Point="40,80"></LineSegment>
+              <LineSegment Point="20,80"></LineSegment>
+              <ArcSegment Point="0,60" Size="20,20" SweepDirection="Clockwise"></ArcSegment>
+              <LineSegment Point="0,20"></LineSegment>
+              <ArcSegment Point="20,0" Size="20,20" SweepDirection="Clockwise"></ArcSegment>
+            </PathFigure>
+          </PathGeometry.Figures>
+        </PathGeometry>
+      </Path.Data>
+      <Path.RenderTransform>
+        <ScaleTransform ScaleX="1.3" ScaleY="1.3"></ScaleTransform>
+      </Path.RenderTransform>
+
+    </Path>
+
+    <StackPanel Margin="5">
+      <!--Close button-->
+      <Button HorizontalAlignment="Right" Click="cmdClose_Click" Margin="0,5,10,0">
+        x
+      </Button>
+
+      <!--<Label  BorderBrush="LightGray" BorderThickness="1" MouseLeftButtonDown="window_MouseLeftButtonDown" FontSize="15" HorizontalAlignment="Center">Drag Here</Label>-->
+      <TextBlock TextWrapping="Wrap"  MouseLeftButtonDown="window_MouseLeftButtonDown" FontSize="15" HorizontalAlignment="Center">This is a balloon-shaped window.</TextBlock>
+    </StackPanel>
+
+
+  </Grid>
+</Window>

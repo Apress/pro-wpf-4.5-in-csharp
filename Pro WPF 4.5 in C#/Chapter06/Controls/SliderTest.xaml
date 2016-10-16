@@ -1,0 +1,20 @@
+﻿<Window x:Class="Controls.SliderTest"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="SliderTest" Height="252" Width="482"
+     >
+  <StackPanel>
+    <TextBlock Margin="10" TextWrapping="Wrap">
+      A Delay of 0 and Interval of 1 make this a fast slider.
+      Try clicking on either side of the thumb and holding down
+      the mouse button.</TextBlock>
+    
+    <Slider Margin="10" TickFrequency="1" TickPlacement="TopLeft" 
+            Maximum="10" Delay="0" Interval="1"
+          >
+    </Slider>
+   
+    </StackPanel>
+    
+  
+</Window>

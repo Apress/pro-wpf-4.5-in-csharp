@@ -1,0 +1,15 @@
+D:\Code\Pro WPF\Chapter31\Multithreading\bin\Debug\Multithreading.exe.config
+D:\Code\Pro WPF\Chapter31\Multithreading\bin\Debug\Multithreading.exe
+D:\Code\Pro WPF\Chapter31\Multithreading\bin\Debug\Multithreading.pdb
+D:\Code\Pro WPF\Chapter31\Multithreading\obj\Debug\Multithreading.csprojResolveAssemblyReference.cache
+D:\Code\Pro WPF\Chapter31\Multithreading\obj\Debug\BackgroundWorkerTest.baml
+D:\Code\Pro WPF\Chapter31\Multithreading\obj\Debug\Window1.baml
+D:\Code\Pro WPF\Chapter31\Multithreading\obj\Debug\BackgroundWorkerTest.g.cs
+D:\Code\Pro WPF\Chapter31\Multithreading\obj\Debug\Window1.g.cs
+D:\Code\Pro WPF\Chapter31\Multithreading\obj\Debug\App.g.cs
+D:\Code\Pro WPF\Chapter31\Multithreading\obj\Debug\Multithreading_MarkupCompile.cache
+D:\Code\Pro WPF\Chapter31\Multithreading\obj\Debug\Multithreading.g.resources
+D:\Code\Pro WPF\Chapter31\Multithreading\obj\Debug\Multithreading.Properties.Resources.resources
+D:\Code\Pro WPF\Chapter31\Multithreading\obj\Debug\Multithreading.csproj.GenerateResource.Cache
+D:\Code\Pro WPF\Chapter31\Multithreading\obj\Debug\Multithreading.exe
+D:\Code\Pro WPF\Chapter31\Multithreading\obj\Debug\Multithreading.pdb

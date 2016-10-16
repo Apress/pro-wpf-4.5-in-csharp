@@ -1,0 +1,16 @@
+﻿<Window x:Class="Drawing.PolylinesAndPolygons"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="PolylinesAndPolygons" Height="534" Width="377"
+    >
+
+    <Canvas>    
+      <Polyline Stroke="Blue" StrokeThickness="5" 
+        Points="10,150 30,140 50,160 70,130 90,170 110,120 130,180 150,110 170,190 190,100 210,240" >
+      </Polyline>
+      <Polygon Stroke="Blue" StrokeThickness="5" Fill="Yellow" Canvas.Top="200" 
+        Points="10,150 30,140 50,160 70,130 90,170 110,120 130,180 150,110 170,190 190,100 210,240" >
+      </Polygon>
+      </Canvas>
+ 
+</Window>

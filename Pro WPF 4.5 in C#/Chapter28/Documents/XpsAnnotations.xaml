@@ -1,0 +1,47 @@
+﻿<Window x:Class="Documents.XpsAnnotations"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="XpsAnnotations" Height="300" Width="300"
+    Loaded="window_Loaded" Unloaded="window_Unloaded"
+           xmlns:annot="clr-namespace:System.Windows.Annotations;assembly=PresentationFramework">
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition></RowDefinition>
+      </Grid.RowDefinitions>
+
+      <ToolBarTray>
+        <ToolBar>
+          <Button
+            Command="annot:AnnotationService.CreateTextStickyNoteCommand"
+            >Text Note</Button>
+          <Button
+                Command="annot:AnnotationService.CreateInkStickyNoteCommand"
+                >Ink Note</Button>
+          <Button
+            Command="annot:AnnotationService.DeleteStickyNotesCommand">Delete Note(s)</Button>
+        </ToolBar>
+        <ToolBar BandIndex="1">
+          <Button Background="Yellow"
+           Command="annot:AnnotationService.CreateHighlightCommand" Width="15" Margin="2,0"
+                  Height="15">
+            <Button.CommandParameter>
+              <SolidColorBrush Color="#54FFFF00"></SolidColorBrush>
+            </Button.CommandParameter>
+          </Button>
+
+          <Button Background="LimeGreen"
+           Command="annot:AnnotationService.CreateHighlightCommand" Width="15" Margin="2,0"
+                  Height="15">
+            <Button.CommandParameter>
+              <SolidColorBrush Color="#5432CD32"></SolidColorBrush>
+            </Button.CommandParameter>
+          </Button>
+          <Button Command="annot:AnnotationService.ClearHighlightsCommand">Clear Highlights</Button>
+        </ToolBar>        
+      </ToolBarTray>
+      
+      <DocumentViewer Grid.Row="1" Name="docViewer">
+      </DocumentViewer>
+    </Grid>
+</Window>

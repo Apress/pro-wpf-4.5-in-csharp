@@ -1,0 +1,13 @@
+﻿<Window x:Class="Controls.LabelTest"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="LabelTest" Height="300" Width="300"
+    >
+  <StackPanel Margin="5">
+    <Label Target="{Binding ElementName=txtA}">Choose _A</Label>
+    <TextBox Name="txtA"></TextBox>
+    <Label Target="{Binding ElementName=txtB}">Choose _B</Label>
+    <TextBox Name="txtB"></TextBox>
+
+  </StackPanel>
+</Window>

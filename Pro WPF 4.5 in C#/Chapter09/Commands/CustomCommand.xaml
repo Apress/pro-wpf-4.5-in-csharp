@@ -1,0 +1,16 @@
+﻿<Window x:Class="Commands.CustomCommand"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Commands" Height="300" Width="300"
+    xmlns:local="clr-namespace:Commands"
+    >
+  <Window.CommandBindings>
+
+    <CommandBinding Command="local:DataCommands.Requery"
+                    Executed="RequeryCommand"/>
+  </Window.CommandBindings>
+
+  <Grid>
+    <Button Margin="5" Command="local:DataCommands.Requery">Requery</Button>      
+    </Grid>
+</Window>

@@ -1,0 +1,9 @@
+﻿<Window x:Class="Printing.PrintWithoutUserIntervention"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="PrintWithoutUserIntervention" Height="300" Width="300"
+    >
+    <Grid Margin="5">
+      <Button Click="cmdPrint_Click">Print</Button>
+    </Grid>
+</Window>

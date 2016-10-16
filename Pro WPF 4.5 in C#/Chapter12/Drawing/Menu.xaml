@@ -1,0 +1,38 @@
+﻿<Window x:Class="Drawing.Menu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Menu" Height="538" Width="282"
+    >
+    <Grid>
+      <StackPanel Margin="5" Button.Click="ButtonClick">
+
+        <Button>Shapes</Button>
+        <Button>RoundedRectangles</Button>
+        <Button>FillModes</Button>
+        <Button>ViewboxResize</Button>
+        <Button>PolylinesAndPolygons</Button>
+        <Button>InsideOutsideFill</Button>
+        <Button>PixelSnapping</Button>
+        <Button>LineCaps</Button>
+        <Button>LineJoins</Button>
+        <Button>DashedLines</Button>
+
+        <Button>Gradients</Button>
+        <Button>GradientText</Button>
+        <Button>RadialGradient</Button>
+        <Button>ImageBrushes</Button>
+        <Button>TileTypes</Button>
+        <Button>TileFlip</Button>
+        <Button>VisualBrush</Button>
+
+        <Button>RotateShape</Button>
+        <Button>RotateElement</Button>
+          
+        <Button>Transparency</Button>
+        <Button>OpacityMask</Button>
+        <Button>Reflection</Button>
+                
+      </StackPanel>
+        
+    </Grid>
+</Window>

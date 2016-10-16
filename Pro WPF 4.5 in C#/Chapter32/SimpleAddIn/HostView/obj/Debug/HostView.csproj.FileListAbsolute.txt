@@ -1,0 +1,5 @@
+D:\Code\Pro WPF\Chapter32\SimpleAddIn\Output\HostView.dll
+D:\Code\Pro WPF\Chapter32\SimpleAddIn\Output\HostView.pdb
+D:\Code\Pro WPF\Chapter32\SimpleAddIn\HostView\obj\Debug\HostView.csprojResolveAssemblyReference.cache
+D:\Code\Pro WPF\Chapter32\SimpleAddIn\HostView\obj\Debug\HostView.dll
+D:\Code\Pro WPF\Chapter32\SimpleAddIn\HostView\obj\Debug\HostView.pdb

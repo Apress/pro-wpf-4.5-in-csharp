@@ -1,0 +1,1 @@
+D:\Code\Pro WPF\Chapter07\LocalizableApplication\bin\Debug\LocalizableApplication.exe.config

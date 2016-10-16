@@ -1,0 +1,29 @@
+﻿<Window x:Class="DataBinding.Menu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Menu" Height="407" Width="238"
+    >
+    <Grid>
+      <StackPanel Margin="5" Button.Click="ButtonClick">
+        <Button>ValueConverter</Button>
+        <Button>MoreValueConverters</Button>
+        <Button>ListStyles</Button>
+
+        <Button>RadioButtonList</Button>
+        <Button>CheckBoxList</Button>
+        <Button>VariedStyles</Button>
+          
+        <Button>DataTemplateList</Button>
+        <Button>DataTemplateByType</Button>        
+        <Button>DataTemplateImages</Button>
+        <Button>DataTemplateControls</Button>
+        <Button>VariedTemplates</Button>
+        <Button>ExpandingDataTemplate</Button>
+        <Button>WrappedList</Button>
+
+        <Button>ComboBoxSelectionBox</Button>        
+
+      </StackPanel>
+        
+    </Grid>
+</Window>

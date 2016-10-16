@@ -1,0 +1,40 @@
+﻿<Window x:Class="Styles.SimpleTriggers"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="SimpleTriggers" Height="300" Width="300"
+    >
+  <Window.Resources>
+    <Style x:Key="BigFontButton">
+      <Style.Setters>
+        <Setter Property="Control.FontFamily" Value="Times New Roman" />
+        <Setter Property="Control.FontSize" Value="18" />
+        
+      </Style.Setters>
+      <Style.Triggers>
+        <Trigger Property="Control.IsFocused" Value="True">
+          <Setter Property="Control.Foreground" Value="DarkRed" />
+        </Trigger>
+        <Trigger Property="Control.IsMouseOver" Value="True">
+          <Setter Property="Control.Foreground" Value="LightYellow" />
+          <Setter Property="Control.FontWeight" Value="Bold" />
+        </Trigger>        
+        <Trigger Property="Button.IsPressed" Value="True">
+          <Setter Property="Control.Foreground" Value="Red" />
+        </Trigger>
+      </Style.Triggers>
+    </Style>
+  </Window.Resources>
+
+  <StackPanel Margin="5">
+    <Button Padding="5" Margin="5"
+            Style="{StaticResource BigFontButton}" 
+              >A Customized Button</Button>
+    <TextBlock Margin="5">Normal Content.</TextBlock>
+    <Button Padding="5" Margin="5"
+            >A Normal Button</Button>
+    <TextBlock Margin="5">More normal Content.</TextBlock>
+    <Button Padding="5" Margin="5"
+            Style="{StaticResource BigFontButton}" 
+              >Another Customized Button</Button>
+  </StackPanel>
+</Window>

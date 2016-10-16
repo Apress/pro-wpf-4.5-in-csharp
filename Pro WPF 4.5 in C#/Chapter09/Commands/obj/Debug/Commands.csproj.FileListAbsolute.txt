@@ -1,0 +1,1 @@
+D:\Code\Pro WPF\Chapter09\Commands\bin\Debug\Commands.exe.config

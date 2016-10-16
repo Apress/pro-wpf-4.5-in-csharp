@@ -1,0 +1,46 @@
+﻿<Window x:Class="MenusAndToolbars.MixedMenus"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ThreeMixedMenus" Height="300" Width="300"
+    >
+    <Grid Margin="5">
+      <Grid.RowDefinitions>
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition></ColumnDefinition>
+        <ColumnDefinition></ColumnDefinition>
+      </Grid.ColumnDefinitions>
+
+      <StackPanel>
+        <Menu VerticalAlignment="Top">
+          <MenuItem Header="File">
+            <MenuItem Command="ApplicationCommands.Open"></MenuItem>
+          </MenuItem>
+          <MenuItem Header="Help"></MenuItem>
+        </Menu>
+        <Button Padding="3" Margin="5">An Ordinary Button</Button>
+      </StackPanel>
+      <TextBox Grid.Row="1" Margin="5">A TextBox</TextBox>
+          
+      <StackPanel Grid.Row="1" Grid.Column="2">
+        <CheckBox Margin="5">A CheckBox</CheckBox>
+        <Menu VerticalAlignment="Top">
+          <MenuItem Header="File"></MenuItem>
+          <MenuItem Header="Help"></MenuItem>
+        </Menu>
+      </StackPanel>
+      
+      
+        <Menu Grid.Row="3" Margin="5" VerticalAlignment="Top" HorizontalAlignment="Left">
+          <MenuItem Header="File">
+            <MenuItem Header="New"></MenuItem>
+            <MenuItem Header="Open"></MenuItem>
+            <MenuItem Header="Save"></MenuItem>
+          </MenuItem>          
+        </Menu>
+      
+    </Grid>
+</Window>

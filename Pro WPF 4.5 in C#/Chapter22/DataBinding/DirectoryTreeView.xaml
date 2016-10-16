@@ -1,0 +1,11 @@
+﻿<Window x:Class="DataBinding.DirectoryTreeView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="DirectoryTreeView" Height="300" Width="300"
+    >
+    <Grid Margin="3">
+      <TreeView Name="treeFileSystem" TreeViewItem.Expanded="item_Expanded">
+        
+      </TreeView>
+    </Grid>
+</Window>

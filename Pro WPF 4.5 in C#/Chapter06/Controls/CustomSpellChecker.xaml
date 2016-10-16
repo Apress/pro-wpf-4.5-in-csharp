@@ -1,0 +1,15 @@
+﻿<Window x:Class="Controls.CustomSpellChecker"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sys="clr-namespace:System;assembly=system"
+        Title="CustomSpellChecker" Height="300" Width="300">
+    <Grid Margin="5">
+        <TextBox SpellCheck.IsEnabled="True" TextWrapping="Wrap" 
+ Text="Now the spell checker recognizes acantholysis and offers the right correction for acantholysi">
+            <SpellCheck.CustomDictionaries>
+                <sys:Uri>pack://application:,,,/Controls;component/CustomWords.lex</sys:Uri>
+            </SpellCheck.CustomDictionaries>
+        </TextBox>
+
+    </Grid>
+</Window>

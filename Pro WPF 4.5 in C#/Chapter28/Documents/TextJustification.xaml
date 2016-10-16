@@ -1,0 +1,40 @@
+﻿<Window x:Class="Documents.TextJustification"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="TextJustification" Height="496" Width="479"
+    >
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition></RowDefinition>
+      <RowDefinition></RowDefinition>
+    </Grid.RowDefinitions>
+
+    <FlowDocumentScrollViewer>
+      <FlowDocument FontSize="22">
+
+        <Paragraph>
+          Unlike a standard line breaking algorithm which breaks the line without taking
+          into account the line that may come after it, the total-fit algorithm breaks
+          line by looking ahead on what may come later in the paragraph and make a single
+          decision to break all the lines at once.
+        </Paragraph>
+
+      </FlowDocument>
+    </FlowDocumentScrollViewer>
+
+
+    <FlowDocumentScrollViewer Grid.Row="1" >
+      <FlowDocument Background="LightYellow" IsOptimalParagraphEnabled="True" IsHyphenationEnabled="True" FontSize="22" >
+
+        <Paragraph>
+          Unlike a standard line breaking algorithm which breaks the line without taking
+          into account the line that may come after it, the total-fit algorithm breaks
+          line by looking ahead on what may come later in the paragraph and make a single
+          decision to break all the lines at once. 
+        </Paragraph>
+
+      </FlowDocument>
+    </FlowDocumentScrollViewer>
+
+  </Grid>
+</Window>

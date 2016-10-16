@@ -1,0 +1,42 @@
+﻿<Page x:Class="XBAP.PopupTest"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="PopupTest"
+    >
+  <StackPanel Name="mainPage" >
+    <StackPanel Margin="10">
+      <TextBlock Margin="5" TextWrapping="Wrap">Click the button to show a Popup that looks like a modal window.</TextBlock>
+      <Button Click="cmdStart_Click" HorizontalAlignment="Left" Padding="3" Margin="5">Start</Button>
+      <Label Name="lblName" Margin="10"></Label>
+    </StackPanel>
+
+    <StackPanel Margin="10">
+      <TextBlock Margin="5" TextWrapping="Wrap">Or click here to show a .NET 2.0 form with a security balloon.</TextBlock>
+      <Button Click="cmdStartWF_Click" HorizontalAlignment="Left" Padding="3" Margin="5">Start</Button>
+      <Label Name="lblNameWF" Margin="10"></Label>
+    </StackPanel>
+    
+    <Popup Name="dialogPopUp" StaysOpen="True" Placement="Center" MaxWidth="200">
+      <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Border>
+          <Border.Background>
+            <LinearGradientBrush>
+              <GradientStop Color="AliceBlue" Offset="1"></GradientStop>
+              <GradientStop Color="LightBlue" Offset="0"></GradientStop>
+            </LinearGradientBrush>
+          </Border.Background>
+          <StackPanel Margin="5" Background="White">
+            <TextBlock Margin="10" TextWrapping="Wrap">
+              Please enter your name.
+            </TextBlock>
+            <TextBox Name="txtName" Margin="10"></TextBox>
+            <StackPanel Orientation="Horizontal" Margin="10">
+              <Button Click="dialog_cmdOK_Click" Padding="3" Margin="0,0,5,0">OK</Button>
+              <Button Click="dialog_cmdCancel_Click" Padding="3">Cancel</Button>
+            </StackPanel>
+          </StackPanel>
+        </Border>
+      </ScrollViewer>
+    </Popup>
+  </StackPanel>
+</Page>

@@ -1,0 +1,43 @@
+﻿<Window x:Class="Controls.Menu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Menu" Height="567" Width="257"
+    >
+    <Grid>
+      <StackPanel Margin="5" Button.Click="ButtonClick">        
+      
+        <Button>EmbeddedFont</Button>
+        <Button>GdiTextRendering</Button>
+          
+        <Button>ButtonsWithContent</Button>
+        <Button>ButtonWithShape</Button>
+        <Button>LabelTest</Button>
+          
+        <Button>RadioButtonGroups</Button>
+        <Button>Tooltips</Button>
+        <Button>PopupTest</Button>
+
+        <Button>ScrollableTextBoxColumn</Button>
+        <Button>LogicalScrolling</Button>
+
+        <Button>GraphicalTabTitles</Button>
+        <Button>ExpandableContent</Button>
+        <Button>MultiDirectionExpanders</Button>
+        <Button>ExpandableScrollableContent</Button>
+
+        <Button>TextBoxTest</Button>
+        <Button>CustomSpellChecker</Button>
+          
+        <Button>ImageList</Button>
+        <Button>CheckBoxList</Button>
+        <Button>ComboBoxTest</Button>
+        <Button>SliderTest</Button>
+        <Button>SlidersCompared</Button>
+        <Button>IndeterminateProgressBar</Button>
+
+        <Button>DateControls</Button>
+
+      </StackPanel>
+        
+    </Grid>
+</Window>

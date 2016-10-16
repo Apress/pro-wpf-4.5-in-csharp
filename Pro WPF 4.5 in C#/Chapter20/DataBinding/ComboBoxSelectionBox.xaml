@@ -1,0 +1,69 @@
+﻿<Window x:Class="DataBinding.ComboBoxSelectionBox"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:DataBinding"
+    Title="ComboBoxSelectionBox" Height="300" Width="300"
+    >
+  <Window.Resources>
+    <local:ImagePathConverter x:Key="ImagePathConverter"></local:ImagePathConverter>
+  </Window.Resources>
+  
+  <StackPanel Margin="5">    
+    <ComboBox Margin="5" SnapsToDevicePixels="True" Name="lstProducts" HorizontalContentAlignment="Stretch"
+              IsEditable="{Binding ElementName=chkIsEditable, Path=IsChecked}"
+              IsReadOnly="{Binding ElementName=chkIsReadOnly, Path=IsChecked}"
+              TextSearch.TextPath="{Binding ElementName=txtTextSearchPath, Path=Text}"
+            >
+      <ComboBox.ItemContainerStyle>
+        <Style>
+          <Setter Property="Control.Padding" Value="0"></Setter>
+          <Style.Triggers>
+            <Trigger Property="ComboBoxItem.IsSelected" Value="True">
+              <Setter Property="ComboBoxItem.Background" Value="DarkRed" />
+            </Trigger>
+            <Trigger Property="ComboBoxItem.IsHighlighted" Value="True">
+              <Setter Property="ComboBoxItem.Background" Value="LightSalmon" />
+            </Trigger>
+          </Style.Triggers>
+        </Style>
+      </ComboBox.ItemContainerStyle>
+      <ComboBox.ItemTemplate>
+        <DataTemplate>
+          <Grid Margin="0" Background="White">
+            <Border Margin="5" BorderThickness="1" BorderBrush="SteelBlue"
+                    Background="{Binding RelativeSource=
+                          {
+                             RelativeSource 
+                             Mode=FindAncestor, 
+                             AncestorType={x:Type ComboBoxItem}
+                          }, 
+                          Path=Background
+                         }" CornerRadius="4">
+              <Grid Margin="3">
+                <Grid.RowDefinitions>
+                  <RowDefinition></RowDefinition>
+                  <RowDefinition></RowDefinition>                  
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition></ColumnDefinition>
+                  <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock FontWeight="Bold" Text="{Binding Path=ModelNumber}"></TextBlock>
+                <TextBlock Grid.Row="1" Text="{Binding Path=ModelName}"></TextBlock>
+                <Image Grid.Column="1" Grid.RowSpan="2" Width="50"  Source="{Binding Path=ProductImagePath, Converter={StaticResource ImagePathConverter}}"></Image>
+              </Grid>
+            </Border>
+          </Grid>
+        </DataTemplate>
+      </ComboBox.ItemTemplate>
+    </ComboBox>
+
+    <CheckBox Name="chkIsEditable" Margin="5">IsEditable</CheckBox>
+    <CheckBox Name="chkIsReadOnly" Margin="5">IsReadOnly</CheckBox>
+    <TextBlock Margin="5">      
+        TextSearch.TextPath:      
+      <TextBox Name="txtTextSearchPath" Width="150" TextChanged="txtTextSearchPath_TextChanged"></TextBox>      
+    </TextBlock>
+    
+  </StackPanel>
+</Window>

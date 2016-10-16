@@ -1,0 +1,10 @@
+﻿<Window x:Class="WindowTracker.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="WindowTracker" Height="300" Width="300"
+    >
+    <StackPanel>
+      <Button Click="cmdCreate_Click" Margin="10,10,10,5" Name="cmdCreate">Click to Create a Document</Button>
+      <Button Click="cmdUpdate_Click" Margin="10,5,10,10" Name="cmdUpdate">Click to Refresh the Documents</Button>
+    </StackPanel>
+</Window>

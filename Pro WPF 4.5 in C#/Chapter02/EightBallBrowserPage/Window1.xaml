@@ -1,0 +1,36 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Eight Ball Answer"  >
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <Grid.Background>
+      <LinearGradientBrush>
+        <LinearGradientBrush.GradientStops>
+          <GradientStop Offset="0.00"  Color="Red" />
+          <GradientStop Offset="0.50" Color="Indigo" />
+          <GradientStop Offset="1.00" Color="Violet" />
+        </LinearGradientBrush.GradientStops>
+      </LinearGradientBrush>
+    </Grid.Background>
+    <TextBox VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="10,10,13,10" Name="txtQuestion" 
+             TextWrapping="Wrap" FontFamily="Verdana" FontSize="24"
+             Grid.Row="0">
+      [Place question here.]
+    </TextBox>
+    <Button VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,0,0,20" Width="127" Height="23" Name="cmdAnswer"
+            
+            Grid.Row="1">      
+      Ask the Eight Ball
+      </Button>
+    <TextBox VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="10,10,13,10" Name="txtAnswer" 
+             TextWrapping="Wrap" IsReadOnly="True" FontFamily="Verdana" FontSize="24" Foreground="Green"
+             Grid.Row="2">
+      [Answer will appear here.]
+    </TextBox>    
+  </Grid>
+</Page>

@@ -1,0 +1,22 @@
+﻿<Window x:Class="Controls.ExpandableContent"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ExpandableContent" Height="300" Width="300" SizeToContent="Height">
+  <StackPanel>
+ 
+  <Expander Margin="5" Padding="5" Header="Region One"
+            BorderThickness="1" BorderBrush="Black">
+    <Button Padding="3">Hidden Button One</Button>
+  </Expander>
+  <Expander Margin="5" Padding="5" Header="Region Two" 
+            BorderThickness="1" BorderBrush="Black">
+      <TextBlock TextWrapping="Wrap">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam mi sapien, viverra et, lacinia varius, ullamcorper sed, sapien. Proin rutrum arcu vitae tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque libero dui, eleifend faucibus, auctor at, aliquet a, nulla. Nunc eros. Phasellus mauris nisi, eleifend nec, adipiscing nec, luctus nec, lacus. Aliquam justo metus, vestibulum non, accumsan id, hendrerit at, nibh. Praesent accumsan urna quis tortor. Proin erat libero, facilisis nec, rhoncus ut, malesuada ut, ipsum. Donec id nibh.
+      </TextBlock>
+    </Expander>
+    <Expander Margin="5" Padding="5" Header="Region Three" IsExpanded="True"
+              BorderThickness="1" BorderBrush="Black">
+      <Button Padding="3">Hidden Button Two</Button>
+    </Expander>
+</StackPanel>
+</Window>

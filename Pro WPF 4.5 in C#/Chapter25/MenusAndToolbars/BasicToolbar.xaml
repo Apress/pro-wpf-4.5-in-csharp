@@ -1,0 +1,41 @@
+﻿<Window x:Class="MenusAndToolbars.BasicToolbar"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="BasicToolbar" Height="229.6" Width="462.4"
+    >
+  <Window.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Icons.xaml"></ResourceDictionary>
+      </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+  </Window.Resources>
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"></RowDefinition>
+      </Grid.RowDefinitions>
+
+
+      <ToolBar>
+        <Button Content="{StaticResource DownloadFile}"></Button>
+
+        <Separator></Separator>
+        <Button>Open</Button>
+        <Button>Save</Button>
+        <Button>Close</Button>
+        <Separator></Separator>
+        <CheckBox FontWeight="Bold">Bold</CheckBox>
+        <CheckBox FontStyle="Italic">Italic</CheckBox>
+        <CheckBox>
+          <TextBlock TextDecorations="Underline">Underline</TextBlock>
+        </CheckBox>
+        <Separator></Separator>        
+        <ComboBox SelectedIndex="0">
+          <ComboBoxItem>100%</ComboBoxItem>
+          <ComboBoxItem>50%</ComboBoxItem>
+          <ComboBoxItem>25%</ComboBoxItem>
+        </ComboBox>
+      </ToolBar>
+    </Grid>
+  
+</Window>

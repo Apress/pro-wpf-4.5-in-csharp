@@ -1,0 +1,51 @@
+﻿<Window x:Class="Drawing.DashedLines"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="DashedLines" Height="401" Width="589"
+    >
+  <Grid Margin="15">
+    <Grid.RowDefinitions>
+      <RowDefinition></RowDefinition>
+      <RowDefinition></RowDefinition>
+      <RowDefinition></RowDefinition>
+      <RowDefinition></RowDefinition>
+      <RowDefinition></RowDefinition>
+   
+    </Grid.RowDefinitions>
+
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition></ColumnDefinition>
+      <ColumnDefinition Width="Auto"></ColumnDefinition>
+    </Grid.ColumnDefinitions>
+
+    <Polyline Stroke="Blue" StrokeThickness="10"
+              StrokeDashArray="1 2" 
+      Points="10,30 60,0 90,40 120,10 350,10" SnapsToDevicePixels="True">
+    </Polyline>
+    <TextBlock Grid.Column="1" VerticalAlignment="Center">Dash Pattern "1 2"</TextBlock>
+
+    <Polyline Stroke="Blue" StrokeThickness="10" Grid.Row="1" 
+               StrokeDashArray="2 1" SnapsToDevicePixels="True"
+      Points="10,30 60,0 90,40 120,10 350,10" >
+    </Polyline>
+    <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Center">Dash Pattern "2 1"</TextBlock>
+
+    <Polyline Stroke="Blue" StrokeThickness="10" Grid.Row="2"
+              StrokeDashArray="5 0.2 3 0.2" SnapsToDevicePixels="True"
+      Points="10,30 60,0 90,40 120,10 350,10" >
+    </Polyline>
+    <TextBlock Grid.Row="2" Grid.Column="1" VerticalAlignment="Center">Dash Pattern "5 0.2 3 0.2"</TextBlock>
+
+    <Polyline Stroke="Blue" StrokeThickness="10" Grid.Row="3" SnapsToDevicePixels="True"
+              StrokeDashArray="3 0.5 2"
+  Points="10,30 60,0 90,40 120,10 350,10" >
+    </Polyline>
+    <TextBlock Grid.Row="3" Grid.Column="1" VerticalAlignment="Center">Uneven Dash Pattern "2 0.5 2"</TextBlock>
+
+    <Polyline Stroke="Blue" StrokeThickness="10" Grid.Row="4" SnapsToDevicePixels="True"
+             StrokeDashArray="1 2"  StrokeDashCap="Round"
+ Points="10,30 60,0 90,40 120,10 350,10" >
+    </Polyline>
+    <TextBlock Grid.Row="4" Grid.Column="1" VerticalAlignment="Center">Dash Pattern with Rounded Caps</TextBlock>
+  </Grid>
+</Window>

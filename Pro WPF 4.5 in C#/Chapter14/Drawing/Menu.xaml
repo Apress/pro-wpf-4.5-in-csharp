@@ -1,0 +1,17 @@
+﻿<Window x:Class="Drawing.Menu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Menu" Height="467" Width="273"
+    >
+    <Grid>
+      <StackPanel Margin="5" Button.Click="ButtonClick">
+        
+        <Button>VisualLayer</Button>
+        <Button>BlurEffects</Button>
+        <Button>DropShadowEffects</Button>
+        <Button>CustomPixelShader</Button>
+        <Button>GenerateBitmap</Button>
+      </StackPanel>
+        
+    </Grid>
+</Window>

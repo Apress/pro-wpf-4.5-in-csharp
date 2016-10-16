@@ -1,0 +1,11 @@
+D:\Code\Pro WPF\Chapter27\3DTools\bin\Debug\3DTools.dll
+D:\Code\Pro WPF\Chapter27\3DTools\bin\Debug\3DTools.pdb
+D:\Code\Pro WPF\Chapter27\3DTools\obj\Debug\3DTools.csprojResolveAssemblyReference.cache
+D:\Code\Pro WPF\Chapter27\3DTools\obj\Debug\Trackport3D.baml
+D:\Code\Pro WPF\Chapter27\3DTools\obj\Debug\Trackport3D.g.cs
+D:\Code\Pro WPF\Chapter27\3DTools\obj\Debug\3DTools_MarkupCompile.cache
+D:\Code\Pro WPF\Chapter27\3DTools\obj\Debug\3DTools.g.resources
+D:\Code\Pro WPF\Chapter27\3DTools\obj\Debug\_3DTools.Properties.Resources.resources
+D:\Code\Pro WPF\Chapter27\3DTools\obj\Debug\3DTools.csproj.GenerateResource.Cache
+D:\Code\Pro WPF\Chapter27\3DTools\obj\Debug\3DTools.dll
+D:\Code\Pro WPF\Chapter27\3DTools\obj\Debug\3DTools.pdb

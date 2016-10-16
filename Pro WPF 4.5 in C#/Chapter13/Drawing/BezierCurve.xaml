@@ -1,0 +1,35 @@
+﻿<Window x:Class="Drawing.BezierCurve"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="BezierCurve" Height="264" Width="281.6"
+    >
+  <Canvas>
+    <Path Stroke="Blue" StrokeThickness="5" Canvas.Top="20">
+      <Path.Data>        
+        <PathGeometry>
+          <PathGeometry.Figures>            
+              <PathFigure StartPoint="10,10">
+                <BezierSegment Point1="130,30" Point2="40,140" Point3="150,150"></BezierSegment>
+              </PathFigure>            
+          </PathGeometry.Figures>
+        </PathGeometry>                  
+      </Path.Data>
+    </Path>
+    <Path Stroke="Green" StrokeThickness="2" StrokeDashArray="5 2" Canvas.Top="20">
+      <Path.Data>
+        <GeometryGroup>
+          <LineGeometry StartPoint="10,10" EndPoint="130,30"></LineGeometry>          
+          <LineGeometry StartPoint="40,140" EndPoint="150,150"></LineGeometry>         
+        </GeometryGroup>
+      </Path.Data>
+    </Path>
+    <Path Fill="Red" Stroke="Red" StrokeThickness="8"  Canvas.Top="20">
+      <Path.Data>
+        <GeometryGroup>
+          <EllipseGeometry Center="130,30"></EllipseGeometry>
+          <EllipseGeometry Center="40,140"></EllipseGeometry>
+        </GeometryGroup>
+      </Path.Data>
+    </Path>
+      </Canvas>
+</Window>

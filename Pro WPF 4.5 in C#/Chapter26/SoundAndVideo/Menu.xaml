@@ -1,0 +1,24 @@
+﻿<Window x:Class="SoundAndVideo.Menu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Menu" Height="321" Width="244"
+    >
+    <Grid>
+      <StackPanel Margin="5" Button.Click="ButtonClick">
+
+        <Button>SoundPlayerTest</Button>
+        
+        <Button>MultipleSounds</Button>
+        <Button>CodePlayback</Button>
+        <Button>DeclarativePlayback</Button>
+        <Button>SynchronizedAnimation</Button>
+        <Button>Video</Button>
+        <Button>AnimatedVideoWindow</Button>
+
+        <Button>SpeechSynthesis</Button>
+        <Button>SpeechRecognition</Button>
+        
+      </StackPanel>
+        
+    </Grid>
+</Window>

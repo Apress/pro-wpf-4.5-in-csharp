@@ -1,0 +1,28 @@
+﻿<Window x:Class="Controls.Tooltips"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Tooltips" Height="321" Width="301"   >
+  <StackPanel Margin="5" ToolTip="StackPanel tooltip">
+    <Button ToolTip="This is my tooltip" ToolTipService.InitialShowDelay="5000">I have a tooltip</Button>
+    <Button ToolTipService.InitialShowDelay="0" ToolTipService.BetweenShowDelay="5000">
+      <Button.ToolTip>
+        <ToolTip Background="#60AA4030" Foreground="White"
+                 HasDropShadow="False" >
+        <StackPanel>
+          <TextBlock Margin="3" >Image and text</TextBlock>
+          <Image Source="happyface.jpg" Stretch="None" />
+          <TextBlock Margin="3" >Image and text</TextBlock>          
+        </StackPanel>
+        </ToolTip>
+        </Button.ToolTip>      
+      <Button.Content>I have a fancy tooltip</Button.Content>
+      
+    </Button>
+    <Button ToolTip="This is my tooltip"  ToolTipService.Placement="Bottom">Placement test</Button>
+    <Button Padding="50">Does Nothing</Button>
+    <TextBox TextWrapping="Wrap" MinLines="2" AutoWordSelection="True"></TextBox>
+    
+  </StackPanel>
+        
+    
+</Window>

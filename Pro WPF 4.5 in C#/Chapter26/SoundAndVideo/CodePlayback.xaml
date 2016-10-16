@@ -1,0 +1,62 @@
+﻿<Window x:Class="SoundAndVideo.CodePlayback"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="CodePlayback" Height="300" Width="300"
+    xmlns:local="clr-namespace:SoundAndVideo"
+    >
+  <Window.Resources>
+
+    <local:TimeSpanConverter x:Key="TimeSpanConverter"></local:TimeSpanConverter>
+  </Window.Resources>
+    <Grid Margin="5">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      
+    </Grid.RowDefinitions>
+
+    <MediaElement Name="media" LoadedBehavior="Manual" UnloadedBehavior="Close" Source="test.mp3" MediaOpened="media_MediaOpened"></MediaElement>
+    <StackPanel Orientation="Horizontal">      
+      <Button Click="cmdPlay_Click" Padding="5" Margin="1">Play</Button>
+      <Button Click="cmdStop_Click" Padding="5" Margin="1">Stop</Button>
+      <Button Click="cmdPause_Click" Padding="5" Margin="1">Pause</Button>      
+    </StackPanel>
+
+      <Grid Grid.Row="1" Margin="0,10,0,0">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"></RowDefinition>
+          <RowDefinition Height="Auto"></RowDefinition>
+          <RowDefinition Height="Auto"></RowDefinition>
+          <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="Auto"></ColumnDefinition>
+          <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Margin="5">Volume: </TextBlock>
+    <Slider Grid.Column="1"  Minimum="0" Maximum="1"
+                 Value="{Binding ElementName=media, Path=Volume, Mode=TwoWay}"></Slider>
+        
+        <TextBlock Grid.Row="1" Margin="5">Balance: </TextBlock>
+    <Slider Grid.Row="1" Grid.Column="1" Minimum="-1" Maximum="1"
+      Value="{Binding ElementName=media, Path=Balance, Mode=TwoWay}"></Slider>
+
+        <TextBlock Grid.Row="2" Margin="5">Speed: </TextBlock>
+    <Slider Grid.Column="1" Grid.Row="2" Minimum="0" Maximum="2"
+     Value="{Binding ElementName=media, Path=SpeedRatio}"></Slider>
+
+        <TextBlock Grid.Row="3" Margin="5,20,5,5">Seek To: </TextBlock>
+        <Slider Minimum="0" Grid.Column="1" Grid.Row="3"  Name="sliderPosition"
+                Margin="0,20,0,0"
+                 TickPlacement="BottomRight" TickFrequency="1"
+  ValueChanged="sliderPosition_ValueChanged"></Slider>
+
+
+      </Grid>
+
+      <TextBlock Grid.Row="3" Name="lblTime"></TextBlock>
+  </Grid>
+
+</Window>

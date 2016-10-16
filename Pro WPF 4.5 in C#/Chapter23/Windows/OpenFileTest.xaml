@@ -1,0 +1,10 @@
+﻿<Window x:Class="Windows.OpenFileTest"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="OpenFileTest" Height="300" Width="300" 
+    >
+  <DockPanel Margin="5">
+    <Button DockPanel.Dock="Top" Click="cmdOpen_Click">Open</Button>
+    <ListBox Name="lstFiles"></ListBox>
+  </DockPanel>
+</Window>

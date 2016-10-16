@@ -1,0 +1,10 @@
+﻿<Window x:Class="RoutedEvents.Focus"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Focus" Height="249" Width="294"
+    >
+  <StackPanel Margin="5">
+    <Button Margin="5" Padding="30" Name="cmdFocus">Focused</Button>
+    <Button Margin="5" Padding="30">Not Focused</Button>
+    </StackPanel>
+</Window>

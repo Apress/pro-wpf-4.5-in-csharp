@@ -1,0 +1,212 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    >
+  <SolidColorBrush x:Key="StandardBorderBrush" Color="#888" />
+  <SolidColorBrush x:Key="StandardBackgroundBrush" Color="#FFF" />
+  <SolidColorBrush x:Key="HoverBorderBrush" Color="#DDD" />
+  <SolidColorBrush x:Key="SelectedBackgroundBrush" Color="Gray" />
+  <SolidColorBrush x:Key="SelectedForegroundBrush" Color="White" />
+
+
+  <LinearGradientBrush x:Key="ListBoxBackgroundBrush" StartPoint="0,0" EndPoint="1,0.001">
+    <GradientBrush.GradientStops>
+      <GradientStopCollection>
+        <GradientStop Color="White" Offset="0.0" />
+        <GradientStop Color="White" Offset="0.6" />
+        <GradientStop Color="#DDDDDD" Offset="1.2"/>
+      </GradientStopCollection>
+    </GradientBrush.GradientStops>
+  </LinearGradientBrush>
+
+
+  <LinearGradientBrush x:Key="StandardBrush" StartPoint="0,0" EndPoint="0,1">
+    <GradientBrush.GradientStops>
+      <GradientStopCollection>
+        <GradientStop Color="#FFF" Offset="0.0"/>
+        <GradientStop Color="#CCC" Offset="1.0"/>
+      </GradientStopCollection>
+    </GradientBrush.GradientStops>
+  </LinearGradientBrush>
+  
+  <SolidColorBrush x:Key="GlyphBrush" Color="#444" />
+  <LinearGradientBrush x:Key="PressedBrush" StartPoint="0,0" EndPoint="0,1">
+    <GradientBrush.GradientStops>
+      <GradientStopCollection>
+        <GradientStop Color="#BBB" Offset="0.0"/>
+        <GradientStop Color="#EEE" Offset="0.1"/>
+        <GradientStop Color="#EEE" Offset="0.9"/>
+        <GradientStop Color="#FFF" Offset="1.0"/>
+      </GradientStopCollection>
+    </GradientBrush.GradientStops>
+  </LinearGradientBrush>
+  
+  <Style x:Key="ScrollBarLineButtonStyle" TargetType="{x:Type RepeatButton}">
+    <Setter Property="Focusable" Value="False"/>
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type RepeatButton}">
+          <Grid Margin="1">
+            <Ellipse Name="Border" StrokeThickness="1" Stroke="{StaticResource StandardBorderBrush}"
+                     Fill="{StaticResource StandardBrush}"></Ellipse>
+            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+          </Grid>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsPressed" Value="true">
+              <Setter TargetName="Border" Property="Fill" Value="{StaticResource PressedBrush}" />
+            </Trigger>           
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+
+  <Style x:Key="ScrollBarPageButtonStyle" TargetType="{x:Type RepeatButton}">
+    <Setter Property="IsTabStop" Value="False"/>
+    <Setter Property="Focusable" Value="False"/>
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type RepeatButton}">
+          <Border Background="Transparent" />
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+
+  <Style x:Key="ScrollBarThumbStyle" TargetType="{x:Type Thumb}">
+    <Setter Property="IsTabStop" Value="False"/>
+    <Setter Property="Focusable" Value="False"/>
+    <Setter Property="Margin" Value="1,0,1,0" />
+    <Setter Property="Background" Value="{StaticResource StandardBrush}" />
+    <Setter Property="BorderBrush" Value="{StaticResource StandardBorderBrush}" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type Thumb}">
+          <Ellipse Stroke="{StaticResource StandardBorderBrush}"
+                     Fill="{StaticResource StandardBrush}"></Ellipse>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>  
+  
+  <ControlTemplate x:Key="VerticalScrollBar" TargetType="{x:Type ScrollBar}">
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition MaxHeight="18"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition MaxHeight="18"/>
+      </Grid.RowDefinitions>
+
+      <RepeatButton Grid.Row="0" Height="18"
+        Style="{StaticResource ScrollBarLineButtonStyle}"
+        Command="ScrollBar.LineUpCommand" >
+        <Path
+              Fill="{StaticResource GlyphBrush}"
+              Data="M 0 4 L 8 4 L 4 0 Z"></Path>
+      </RepeatButton>
+      <Track Name="PART_Track" Grid.Row="1" 
+        IsDirectionReversed="True" ViewportSize="0">
+        <Track.DecreaseRepeatButton>
+          <RepeatButton Command="ScrollBar.PageUpCommand" Style="{StaticResource ScrollBarPageButtonStyle}">            
+          </RepeatButton>
+        </Track.DecreaseRepeatButton>
+        <Track.Thumb>
+          <Thumb Style="{StaticResource ScrollBarThumbStyle}">            
+          </Thumb>
+        </Track.Thumb>
+        <Track.IncreaseRepeatButton>
+          <RepeatButton Command="ScrollBar.PageDownCommand" Style="{StaticResource ScrollBarPageButtonStyle}">            
+          </RepeatButton>
+        </Track.IncreaseRepeatButton>
+      </Track>
+      <RepeatButton
+        Grid.Row="3" Height="18"
+        Style="{StaticResource ScrollBarLineButtonStyle}"
+        Command="ScrollBar.LineDownCommand">
+        <Path              
+              Fill="{StaticResource GlyphBrush}"
+              Data="M 0 0 L 4 4 L 8 0 Z"></Path>
+      </RepeatButton>
+    </Grid>
+  </ControlTemplate>
+
+
+  <Style TargetType="{x:Type ScrollBar}">
+    <Setter Property="SnapsToDevicePixels" Value="True"/>
+    <Setter Property="OverridesDefaultStyle" Value="true"/>
+    <Style.Triggers>
+
+      <Trigger Property="Orientation" Value="Vertical">
+        <Setter Property="Width" Value="18"/>
+        <Setter Property="Height" Value="Auto" />
+        <Setter Property="Template" Value="{StaticResource VerticalScrollBar}" />
+      </Trigger>
+    </Style.Triggers>
+  </Style>
+
+ 
+  <Style TargetType="{x:Type ListBox}">
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type ListBox}">            
+          <Border 
+            Name="Border" 
+            Background="{StaticResource ListBoxBackgroundBrush}"
+            BorderBrush="{StaticResource StandardBorderBrush}"
+            BorderThickness="1"
+            CornerRadius="3">
+            <ScrollViewer  
+              Focusable="False">
+              <ItemsPresenter Margin="2"></ItemsPresenter>
+            </ScrollViewer>
+          </Border>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+
+  <Style TargetType="{x:Type ListBoxItem}">
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type ListBoxItem}">
+          <Border
+            Name="Border" BorderThickness="2" CornerRadius="3"
+            Padding="1" 
+            SnapsToDevicePixels="True">
+            <ContentPresenter />
+          </Border>
+          <ControlTemplate.Triggers>
+            <EventTrigger RoutedEvent="ListBoxItem.MouseEnter">
+                <EventTrigger.Actions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="FontSize"
+       To="20" Duration="0:0:1"></DoubleAnimation>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+            <EventTrigger RoutedEvent="ListBoxItem.MouseLeave">
+                <EventTrigger.Actions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="FontSize"
+       BeginTime="0:0:0.5" Duration="0:0:0.2"></DoubleAnimation>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+
+            <Trigger Property="IsMouseOver" Value="True">
+              <Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource HoverBorderBrush}"/>
+            </Trigger>
+            <Trigger Property="IsSelected" Value="True">
+              <Setter TargetName="Border" Property="Background" Value="{StaticResource SelectedBackgroundBrush}"/>
+              <Setter TargetName="Border" Property="TextBlock.Foreground" Value="{StaticResource SelectedForegroundBrush}"/>
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+
+</ResourceDictionary>

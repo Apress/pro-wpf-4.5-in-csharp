@@ -1,0 +1,14 @@
+﻿<Window x:Class="Controls.ButtonWithShape"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ButtonWithShape" Height="150" Width="258.8"
+    >
+   <Button Margin="10">
+    <Grid>      
+        <Polygon Points="100,25 125,0 200,25 125,50"
+             Fill="LightSteelBlue" />
+        <Polygon Points="100,25 75,0 0,25 75,50"
+             Fill="White"/>      
+    </Grid>
+  </Button>
+</Window>

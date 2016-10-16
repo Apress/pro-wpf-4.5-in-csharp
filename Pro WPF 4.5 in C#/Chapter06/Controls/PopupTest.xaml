@@ -1,0 +1,23 @@
+﻿<Window x:Class="Controls.PopupTest"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="PopupTest" Height="300" Width="300"
+    >
+    <Grid Margin="10">
+      <TextBlock TextWrapping="Wrap">You can use a Popup to provide a link for
+      a specific <Run TextDecorations="Underline"  
+        MouseEnter="run_MouseEnter" 
+                      >term</Run> of interest.</TextBlock>
+      <Popup Name="popLink" StaysOpen="False" Placement="Mouse" MaxWidth="200"
+             PopupAnimation="Slide" AllowsTransparency = "True">
+        <Border BorderBrush="Beige" BorderThickness="2" Background="White">
+          <TextBlock Margin="10"  TextWrapping="Wrap" >
+            For more information, see
+            <Hyperlink NavigateUri="http://en.wikipedia.org/wiki/Term" Click="lnk_Click">Wikipedia</Hyperlink>
+
+
+          </TextBlock>
+        </Border>
+      </Popup>
+    </Grid>
+</Window>

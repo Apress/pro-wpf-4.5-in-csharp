@@ -1,0 +1,17 @@
+﻿<Window x:Class="Drawing.CustomPixelShader"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Drawing"
+        Title="CustomPixelShader" Height="386" Width="268">
+    <StackPanel>
+        <Image Name="img" Margin="5" Source="harpsichord.jpg">
+            <Image.Effect>
+                <local:GrayscaleEffect></local:GrayscaleEffect>
+            </Image.Effect>
+        </Image>
+        <CheckBox Name="chkEffect" Margin="5" Content="Effect enabled" IsChecked="True" Click="chkEffect_Click"></CheckBox>
+        
+    </StackPanel>
+        
+    
+</Window>

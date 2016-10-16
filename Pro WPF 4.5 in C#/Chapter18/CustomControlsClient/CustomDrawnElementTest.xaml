@@ -1,0 +1,23 @@
+﻿<Window x:Class="CustomControlsClient.CustomDrawnElementTest"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:lib="clr-namespace:CustomControls;assembly=CustomControls"
+    Title="CustomDrawnElement" Height="300" Width="300"
+    >
+    <Grid Margin="5">
+      <Grid.RowDefinitions>
+        <RowDefinition></RowDefinition>
+        <RowDefinition Height="Auto"></RowDefinition>
+      </Grid.RowDefinitions>
+      <lib:CustomDrawnElement BackgroundColor="{Binding ElementName=lstColors,Path=SelectedItem.Content}"></lib:CustomDrawnElement>
+
+      <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="5">
+        <TextBlock VerticalAlignment="Center" xml:space="preserve">Background Color:  </TextBlock>
+        <ComboBox Name="lstColors" Width="100">
+          <ComboBoxItem>Yellow</ComboBoxItem>
+          <ComboBoxItem>Blue</ComboBoxItem>
+          <ComboBoxItem IsSelected="True">Green</ComboBoxItem>
+        </ComboBox>
+      </StackPanel>
+    </Grid>
+</Window>

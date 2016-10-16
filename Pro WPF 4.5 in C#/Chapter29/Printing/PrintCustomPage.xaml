@@ -1,0 +1,19 @@
+﻿<Window x:Class="Printing.PrintCustomPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="PrintCustomPage" Height="300" Width="300"
+    >
+    <Grid Margin="5">
+      <Grid.RowDefinitions>
+        <RowDefinition></RowDefinition>
+        <RowDefinition Height="Auto"></RowDefinition>
+      </Grid.RowDefinitions>
+      <TextBox Name="txtContent" Margin="3" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible">
+        Marley was dead: to begin with There is no doubt whatever about that. The register of his burial was signed by the clergyman, the clerk, the undertaker, and the chief mourner. Scrooge signed it: and Scrooge’s name was good upon ’Change, for anything he chose to put his hand to. Old Marley was as dead as a door-nail.
+
+
+
+      </TextBox>
+      <Button Grid.Row="1" Margin="3" Padding="5" Click="cmdPrint_Click" VerticalAlignment="Top">Print</Button>
+    </Grid>
+</Window>

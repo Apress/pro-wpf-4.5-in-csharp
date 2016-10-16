@@ -1,0 +1,8 @@
+﻿<Page x:Class="WindowPageHost.Page2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" KeepAlive="True">
+  <TextBlock Margin="3" TextWrapping="Wrap">
+    Visit the website
+    <Hyperlink NavigateUri="http://www.prosetech.com">www.prosetech.com</Hyperlink>.
+  </TextBlock>
+</Page>

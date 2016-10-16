@@ -1,0 +1,17 @@
+D:\Code\Pro WPF\Chapter18\CustomControls\bin\Debug\CustomControls.dll
+D:\Code\Pro WPF\Chapter18\CustomControls\bin\Debug\CustomControls.pdb
+D:\Code\Pro WPF\Chapter18\CustomControls\obj\Debug\CustomControls.csprojResolveAssemblyReference.cache
+D:\Code\Pro WPF\Chapter18\CustomControls\obj\Debug\ColorPickerUserControl.baml
+D:\Code\Pro WPF\Chapter18\CustomControls\obj\Debug\themes\generic.baml
+D:\Code\Pro WPF\Chapter18\CustomControls\obj\Debug\ColorPickerUserControl.g.cs
+D:\Code\Pro WPF\Chapter18\CustomControls\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Code\Pro WPF\Chapter18\CustomControls\obj\Debug\CustomControls_MarkupCompile.cache
+D:\Code\Pro WPF\Chapter18\CustomControls\obj\Debug\CustomControls_MarkupCompile.lref
+D:\Code\Pro WPF\Chapter18\CustomControls\obj\Debug\themes\Classic.baml
+D:\Code\Pro WPF\Chapter18\CustomControls\obj\Debug\themes\ColorPicker.baml
+D:\Code\Pro WPF\Chapter18\CustomControls\obj\Debug\themes\FlipPanel.baml
+D:\Code\Pro WPF\Chapter18\CustomControls\obj\Debug\CustomControls.g.resources
+D:\Code\Pro WPF\Chapter18\CustomControls\obj\Debug\CustomControls.Properties.Resources.resources
+D:\Code\Pro WPF\Chapter18\CustomControls\obj\Debug\CustomControls.csproj.GenerateResource.Cache
+D:\Code\Pro WPF\Chapter18\CustomControls\obj\Debug\CustomControls.dll
+D:\Code\Pro WPF\Chapter18\CustomControls\obj\Debug\CustomControls.pdb

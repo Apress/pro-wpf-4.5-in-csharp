@@ -1,0 +1,25 @@
+﻿<Window x:Class="Animation.Menu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Menu" Height="405.8" Width="254.4"
+    >
+    <Grid>
+      <StackPanel Margin="5" Button.Click="ButtonClick">
+
+        <Button>CodeAnimation</Button>
+        <Button>XamlAnimation</Button>
+        <Button>AnimationInStyle</Button>
+        <Button>AnimationPlayer</Button>
+        <Button>ImageWipe</Button>
+          
+        <Button>Easing</Button>
+        <Button>CustomEasingFunction</Button>
+        <Button>FrameRates</Button>
+
+        <Button>CachingTest</Button>
+        <Button>CachingTest2</Button>
+
+        </StackPanel>
+        
+    </Grid>
+</Window>

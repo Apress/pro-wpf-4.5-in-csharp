@@ -1,0 +1,25 @@
+﻿<Window x:Class="Drawing.FillModes"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="FillModes" Height="270" Width="477"
+    >
+  <Grid ShowGridLines="True" Margin="5">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition></ColumnDefinition>
+      <ColumnDefinition></ColumnDefinition>
+      <ColumnDefinition></ColumnDefinition>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+    </Grid.RowDefinitions>
+
+    <Ellipse Fill="Yellow" Stroke="Blue"></Ellipse>
+    <Ellipse Fill="Yellow" Stroke="Blue" Grid.Column="1" Stretch="Uniform"></Ellipse>
+    <Ellipse Fill="Yellow" Stroke="Blue" Grid.Column="2" Stretch="UniformToFill "></Ellipse>
+
+    <TextBlock Grid.Row="1" TextAlignment="Center">Fill</TextBlock>
+    <TextBlock Grid.Row="1" Grid.Column="1" TextAlignment="Center">Uniform</TextBlock>
+    <TextBlock Grid.Row="1" Grid.Column="2" TextAlignment="Center">UniformToFill</TextBlock>
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+﻿<Window x:Class="Controls.TextBoxTest"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="TextBoxTest" Height="325" Width="390"
+    >
+  <Grid Margin="5">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="2*"></RowDefinition>
+      <RowDefinition Height="*"></RowDefinition>
+    </Grid.RowDefinitions>
+    <TextBox  Name="txt" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" AcceptsReturn="True"  
+             SelectionChanged="txt_SelectionChanged"  
+             SpellCheck.IsEnabled="True">The Ministry of Truth contained, it was said, three thousand rooms above ground level, and corresponding ramifications below. Scattered about London there were just three other buildings of similar appearance and size. So completely did they dwarf the surrounding architecture that from the roof of Victory Mansions you could see all four of them simultaneously. They were the homes of the four Ministries between which the entire apparatus of government was divided. The Ministry of Truth, which concerned itself with news, entertainment, education, and the fine arts. The Ministry of Peace, which concerned itself with war. The Ministry of Love, which maintained law and order. And the Ministry of Plenty, which was responsible for economic affairs. Their names, in Newspeak: Minitrue, Minipax, Miniluv, and Miniplenty. </TextBox>
+    <ScrollViewer Foreground="Blue" Grid.Row="1" Margin="0,10,0,5" VerticalScrollBarVisibility="Auto">
+      
+        <StackPanel>
+          <TextBlock>Current selection: </TextBlock>
+          <TextBlock  Name="txtSelection" TextWrapping="Wrap"></TextBlock>
+        </StackPanel>
+      </ScrollViewer>
+    
+  </Grid>
+</Window>

@@ -1,0 +1,34 @@
+﻿<Window x:Class="DataBinding.MultipleBindings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MultipleBindings" Height="300" Width="300"
+    >
+
+  <Grid Margin="5">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition></RowDefinition>
+    </Grid.RowDefinitions>
+    
+    <Slider Name="sliderFontSize" Margin="3" Minimum="1" Maximum="40" Value="10"></Slider>      
+    
+    <TextBox Name="txtContent" Margin="3" Grid.Row="2">Sample Content</TextBox>
+
+    <ListBox Margin="3" Grid.Row="3" Name="lstColors">
+      <ListBoxItem Tag="Blue">Blue</ListBoxItem>
+      <ListBoxItem Tag="DarkBlue">Dark Blue</ListBoxItem>
+      <ListBoxItem Tag="LightBlue">Light Blue</ListBoxItem>
+    </ListBox>
+    
+    <TextBlock Margin="3" Name="lblSampleText" 
+           FontSize="{Binding ElementName=sliderFontSize, Path=Value}"  Grid.Row="4"
+           Text="{Binding ElementName=txtContent, Path=Text}"           
+           Foreground="{Binding ElementName=lstColors, Path=SelectedItem.Tag}"
+           >      
+    </TextBlock>
+    
+  </Grid>
+</Window>

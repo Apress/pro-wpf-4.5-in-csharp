@@ -1,0 +1,18 @@
+﻿<Window x:Class="DataBinding.Menu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Menu" Height="382.6" Width="246.4"
+    >
+    <Grid>
+      <StackPanel Margin="5" Button.Click="ButtonClick">
+        
+        <Button>NavigateCollection</Button>
+        <Button>FilterCollection</Button>
+        <Button>FilterDataSet</Button>        
+        <Button>GroupList</Button>
+        <Button>GroupInRanges</Button>
+
+      </StackPanel>
+        
+    </Grid>
+</Window>

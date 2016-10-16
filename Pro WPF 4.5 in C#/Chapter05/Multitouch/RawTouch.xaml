@@ -1,0 +1,13 @@
+﻿<Window x:Class="Multitouch.RawTouch"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="RawTouch" Height="363" Width="568">
+    <Grid>
+        <Canvas 
+                x:Name="canvas" Background="LightSkyBlue"
+                TouchDown="canvas_TouchDown" TouchUp="canvas_TouchUp" 
+                TouchMove="canvas_TouchMove">
+        </Canvas>
+    </Grid>
+
+</Window>

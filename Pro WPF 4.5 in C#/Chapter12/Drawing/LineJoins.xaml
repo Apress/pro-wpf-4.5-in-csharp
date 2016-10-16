@@ -1,0 +1,42 @@
+﻿<Window x:Class="Drawing.LineJoins"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="LineJoins" Height="431" Width="303"
+    >
+  <Grid Margin="15">
+    <Grid.RowDefinitions>
+      <RowDefinition></RowDefinition>
+      <RowDefinition></RowDefinition>
+      <RowDefinition></RowDefinition>
+      <RowDefinition></RowDefinition>
+    </Grid.RowDefinitions>
+
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition></ColumnDefinition>
+      <ColumnDefinition Width="Auto"></ColumnDefinition>
+    </Grid.ColumnDefinitions>
+
+    <Polyline Stroke="Blue" StrokeThickness="14" StrokeLineJoin="Bevel" SnapsToDevicePixels="True"
+      Points="10,60 30,10 50,70 90,40" >
+    </Polyline>
+    <TextBlock Grid.Column="1" VerticalAlignment="Center">Bevel Line Join</TextBlock>
+
+    <Polyline Stroke="Blue" StrokeThickness="14" Grid.Row="1" StrokeLineJoin="Round"  SnapsToDevicePixels="True"
+      Points="10,60 30,10 50,70 90,40" >
+    </Polyline>
+    <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Center">Round Line Join</TextBlock>
+
+    <Polyline Grid.Row="2" Stroke="Blue" StrokeThickness="14" StrokeLineJoin="Miter"  StrokeMiterLimit="1"
+              SnapsToDevicePixels="True" 
+      Points="10,60 30,10 50,70 90,40" >
+    </Polyline>
+    <TextBlock Grid.Row="2" Grid.Column="1" VerticalAlignment="Center">Miter Line Join</TextBlock>
+
+    <Polyline Grid.Row="3" Stroke="Blue" StrokeThickness="14" StrokeLineJoin="Miter"  StrokeMiterLimit="3"
+                SnapsToDevicePixels="True" 
+        Points="10,60 30,10 50,70 90,40" >
+    </Polyline>
+    <TextBlock Grid.Row="3" Grid.Column="1" VerticalAlignment="Center">Miter Line Join With Limit of 3</TextBlock>
+
+  </Grid>
+</Window>

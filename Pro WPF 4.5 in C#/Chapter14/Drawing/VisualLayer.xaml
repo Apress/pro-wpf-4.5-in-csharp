@@ -1,0 +1,66 @@
+﻿<Window x:Class="Drawing.VisualLayer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="VisualLayer" Height="350.4" Width="496.8"
+        xmlns:local="clr-namespace:Drawing"
+    >
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"></ColumnDefinition>
+        <ColumnDefinition></ColumnDefinition>
+      </Grid.ColumnDefinitions>
+      <ToolBarTray Orientation="Vertical">
+      <ToolBar>
+        <RadioButton Margin="0,3" Name="cmdSelectMove">
+          <StackPanel>
+            <Image Source="pointer.png" Width="35" Height="35"></Image>
+            <TextBlock>Select/Move</TextBlock>
+          </StackPanel>
+        </RadioButton>        
+        <RadioButton Margin="0,3" IsChecked="True" Name="cmdAdd">
+          <StackPanel>
+            <Rectangle Width="30" Height="30" Stroke="SteelBlue" StrokeThickness="3" Fill="AliceBlue"></Rectangle>
+            <TextBlock>Add Square</TextBlock>
+          </StackPanel>
+        </RadioButton>
+        <RadioButton Margin="0,3" Name="cmdDelete">
+          <StackPanel>
+            <Path Stroke="SteelBlue" StrokeThickness="4" StrokeEndLineCap="Round" StrokeStartLineCap="Round"
+                  Fill="Red" HorizontalAlignment="Center">
+              <Path.Data>
+                <GeometryGroup>
+                  <PathGeometry>
+                    <PathFigure StartPoint="0,0">
+                      <LineSegment Point="18,18"></LineSegment>
+                    </PathFigure>
+                    <PathFigure StartPoint="0,18">
+                      <LineSegment Point="18,0"></LineSegment>
+                    </PathFigure>
+                  </PathGeometry>
+                </GeometryGroup>
+              </Path.Data>
+            </Path>
+            <TextBlock>Delete Square</TextBlock>
+          </StackPanel>
+        </RadioButton>
+        <RadioButton Margin="0,3" Name="cmdSelectMultiple">
+          <StackPanel>
+            <Image Source="pointer.png" Width="35" Height="35"></Image>
+            <TextBlock>Select Multiple</TextBlock>
+          </StackPanel>
+        </RadioButton>
+      </ToolBar>
+      </ToolBarTray>
+
+      <Border Grid.Column="1" Margin="3" BorderBrush="SteelBlue" BorderThickness="1">
+        
+        <local:DrawingCanvas x:Name="drawingSurface" Background="White" ClipToBounds="True"
+                             MouseLeftButtonDown="drawingSurface_MouseLeftButtonDown"
+                MouseLeftButtonUp="drawingSurface_MouseLeftButtonUp"
+                MouseMove="drawingSurface_MouseMove">          
+        </local:DrawingCanvas>
+
+         
+      </Border>
+    </Grid>
+</Window>

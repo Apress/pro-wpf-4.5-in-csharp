@@ -1,0 +1,14 @@
+﻿<Window x:Class="LayoutPanels.SimpleWrap"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="LayoutPanels" Height="142" Width="431"
+    >
+  <WrapPanel Margin="3">
+    <Button VerticalAlignment="Top">Top Button</Button>
+    <Button MinHeight="60">Tall Button 2</Button>
+    <Button VerticalAlignment="Bottom">Bottom Button</Button>
+    <Button>Stretch Button</Button>
+    <Button VerticalAlignment="Center">Centered Button</Button>   
+  </WrapPanel>
+
+</Window>

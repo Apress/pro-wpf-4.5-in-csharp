@@ -1,0 +1,21 @@
+﻿<Window x:Class="Windows.TransparentBackground"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Windows" Height="300" Width="300"
+    WindowStyle="None" AllowsTransparency="true"
+    MouseLeftButtonDown="window_MouseLeftButtonDown"        
+    >
+  <Window.Background>    
+    <ImageBrush ImageSource="shapes.png"></ImageBrush>
+  </Window.Background>
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+      </Grid.RowDefinitions>
+      <Button Margin="20">A Sample Button</Button>   
+      <Button Margin="20" Grid.Row="2" Click="cmdClose_Click">Close</Button>   
+    </Grid>
+</Window>

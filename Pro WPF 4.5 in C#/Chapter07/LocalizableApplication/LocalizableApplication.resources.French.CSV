@@ -1,0 +1,14 @@
+﻿LocalizableApplication.g.en-US.resources:window1.baml,Window_1:LocalizableApplication.Window1.$Content,None,True,True,,#StackPanel_1;
+LocalizableApplication.g.en-US.resources:window1.baml,Window_1:System.Windows.Window.Title,Title,True,True,,LocalizableApplication
+LocalizableApplication.g.en-US.resources:window1.baml,Window_1:System.Windows.FrameworkElement.Height,None,False,True,,300
+LocalizableApplication.g.en-US.resources:window1.baml,Window_1:System.Windows.FrameworkElement.Width,None,False,True,,300
+LocalizableApplication.g.en-US.resources:window1.baml,Window_1:System.Windows.Window.SizeToContent,None,False,True,,WidthAndHeight
+LocalizableApplication.g.en-US.resources:window1.baml,StackPanel_1:System.Windows.FrameworkElement.Margin,None,False,True,,10
+LocalizableApplication.g.en-US.resources:window1.baml,TextBlock_1:System.Windows.Controls.TextBlock.$Content,Text,True,True,,Une ligne de texte
+LocalizableApplication.g.en-US.resources:window1.baml,TextBlock_1:System.Windows.FrameworkElement.Margin,None,False,True,,10
+LocalizableApplication.g.en-US.resources:window1.baml,cmdDoSomething:System.Windows.Controls.Button.$Content,Button,True,True,,Un bouton
+LocalizableApplication.g.en-US.resources:window1.baml,cmdDoSomething:System.Windows.FrameworkElement.Margin,None,False,True,,10
+LocalizableApplication.g.en-US.resources:window1.baml,cmdDoSomething:System.Windows.Controls.Control.Padding,None,False,True,,3
+LocalizableApplication.g.en-US.resources:window1.baml,TextBlock_2:System.Windows.Controls.TextBlock.$Content,Text,True,True,,C'est une autre ligne de texte.
+LocalizableApplication.g.en-US.resources:window1.baml,TextBlock_2:System.Windows.FrameworkElement.Margin,None,False,True,,10
+LocalizableApplication.g.en-US.resources:window1.baml,s:String_1:System.String.$Content,None,True,True,,Quelque chose de mauvais s'est produit.

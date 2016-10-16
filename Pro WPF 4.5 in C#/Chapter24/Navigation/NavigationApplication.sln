@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigationApplication", "NavigationApplication\NavigationApplication.csproj", "{4DCC1CD5-AF95-4AB1-9FB2-3524B3E4BBBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PageLibrary", "PageLibrary\PageLibrary.csproj", "{6D842AD2-F23F-4533-BC9D-49DF80E75E8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DCC1CD5-AF95-4AB1-9FB2-3524B3E4BBBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DCC1CD5-AF95-4AB1-9FB2-3524B3E4BBBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DCC1CD5-AF95-4AB1-9FB2-3524B3E4BBBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DCC1CD5-AF95-4AB1-9FB2-3524B3E4BBBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D842AD2-F23F-4533-BC9D-49DF80E75E8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D842AD2-F23F-4533-BC9D-49DF80E75E8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D842AD2-F23F-4533-BC9D-49DF80E75E8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D842AD2-F23F-4533-BC9D-49DF80E75E8E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

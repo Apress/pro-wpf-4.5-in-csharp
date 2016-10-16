@@ -1,0 +1,65 @@
+﻿<Window x:Class="LayoutPanels.ModularContent"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ModularContent" Height="362" Width="516"    
+    >
+  <ScrollViewer>
+  <StackPanel>
+  <WrapPanel Background="LightSteelBlue" Name="pnlList">
+    <CheckBox Margin="5" IsChecked="True">Panel1</CheckBox>
+    <CheckBox Margin="5" IsChecked="True">Panel2</CheckBox>
+    <CheckBox Margin="5" IsChecked="True">Panel3</CheckBox>
+    <CheckBox Margin="5" IsChecked="True">Panel4</CheckBox>
+  </WrapPanel>
+    
+  <WrapPanel>
+    <StackPanel Name="Panel1" >
+    <Border Padding="5" BorderBrush="Yellow" BorderThickness="2">
+      <UniformGrid Rows="2" Columns="2">
+        <Button Margin="10" Padding="10">1</Button>
+        <Button Margin="10" Padding="10">2</Button>
+        <Button Margin="10" Padding="10">3</Button>
+        <Button Margin="10" Padding="10">4</Button>
+      </UniformGrid>
+    </Border>
+    </StackPanel>
+    
+    <StackPanel Name="Panel2">
+      <Border Padding="15" BorderBrush="Yellow" BorderThickness="2">
+      <TabControl>
+        <TabItem Header="Page1">
+          <Button Padding="100,50,100,50">Tabs</Button>
+        </TabItem>
+        <TabItem Header="Page2">          
+        </TabItem>        
+      </TabControl>
+      </Border>
+    </StackPanel>
+
+    <StackPanel Name="Panel3">
+      <Border Padding="15" BorderBrush="Yellow" BorderThickness="2">
+        <StackPanel>
+          <TextBox MinLines="5" MaxWidth="150" TextWrapping="Wrap">This is a test of a text box that contains wrapped text.</TextBox>
+          <StackPanel Orientation="Horizontal">
+            <Button>OK</Button>
+            <Button>Cancel</Button>
+          </StackPanel>
+        </StackPanel>
+      </Border>
+    </StackPanel>
+
+    <StackPanel Name="Panel4">
+      <Border Padding="15" BorderBrush="Yellow" BorderThickness="2">
+        <UniformGrid Rows="2" Columns="2">
+          <Button Margin="10" Padding="10">1</Button>
+          <Button Margin="10" Padding="10">2</Button>
+          <Button Margin="10" Padding="10">3</Button>
+          <Button Margin="10" Padding="10">4</Button>
+        </UniformGrid>
+      </Border>
+    </StackPanel>
+  </WrapPanel>
+    
+  </StackPanel>
+  </ScrollViewer>
+</Window>

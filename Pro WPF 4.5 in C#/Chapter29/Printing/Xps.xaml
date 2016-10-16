@@ -1,0 +1,21 @@
+﻿<Window x:Class="Printing.Xps"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Xps" Height="455" Width="476" Loaded="Window_Loaded"
+    >
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+    </Grid.RowDefinitions>
+
+    <DocumentViewer Name="docViewer"></DocumentViewer>
+      <Button Grid.Row="1" Margin="3" Padding="3" Click="cmdShowFlow_Click">Show Flow Document</Button>
+    <Button Grid.Row="2" Margin="3" Padding="3" Click="cmdPrintXps_Click">Print XPS</Button>
+    <Button Grid.Row="3" Margin="3" Padding="3" Click="cmdPrintFlow_Click">Print Flow via XPS</Button>
+  </Grid> 
+      
+  
+</Window>

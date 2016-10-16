@@ -1,0 +1,25 @@
+﻿<Window x:Class="Windows.Menu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Menu" Height="321" Width="244"
+    >
+    <Grid>
+      <StackPanel Margin="5" Button.Click="ButtonClick">
+
+        <Button>CenterScreen</Button>
+        <Button>SavePosition</Button>
+        <Button>WindowOwnership</Button>        
+        <Button>OpenFileTest</Button>
+        <Button>TransparentBackground</Button>
+        <Button>TransparentWithShapes</Button>
+
+        <Button>ModernWindow</Button>
+        <Button>TemplatedWindow</Button>
+        <Button>VistaGlassWindow1</Button>
+        <Button>VistaGlassWindow2</Button>
+        
+
+      </StackPanel>
+        
+    </Grid>
+</Window>

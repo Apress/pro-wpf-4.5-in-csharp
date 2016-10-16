@@ -1,0 +1,84 @@
+﻿<r:RibbonWindow x:Class="Ribbon.MainWindow"
+ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+ Title="MainWindow" Height="350" Width="525"
+ xmlns:r=
+ "clr-namespace:Microsoft.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary">
+
+    <r:RibbonWindow.Resources>
+        <ResourceDictionary>
+
+            <RoutedUICommand x:Key="SaveCommand" Text="Save" />
+            <RoutedUICommand x:Key="SaveAsCommand" />
+        </ResourceDictionary>
+    </r:RibbonWindow.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        
+        
+        
+        <r:Ribbon x:Name="ribbon">
+            <r:Ribbon.ApplicationMenu>
+                <r:RibbonApplicationMenu SmallImageSource="images\window2.png" AuxiliaryPaneContent="Test">
+                    
+                        <r:RibbonApplicationMenuItem Header="New" 
+                        ToolTipTitle="Application Menu" ImageSource="images\window2.png" />
+                    
+                    <r:RibbonApplicationMenuItem
+                        Header="_Save" ImageSource="images\save.png"
+      />
+                   
+
+                        <r:RibbonApplicationMenuItem Command="{StaticResource SaveAsCommand}">
+                        </r:RibbonApplicationMenuItem>
+
+                        <r:RibbonApplicationMenuItem Command="{StaticResource SaveCommand}">
+                        </r:RibbonApplicationMenuItem>
+
+                  
+
+
+                </r:RibbonApplicationMenu>
+
+            </r:Ribbon.ApplicationMenu>
+
+
+            <r:RibbonTab Header="Home">
+                <r:RibbonGroup Header="Clipboard">
+                    <r:RibbonButton Label="Cut" 
+           SmallImageSource="images/cut.png" LargeImageSource="images/cut.png" />
+                    <r:RibbonButton Label="Copy" 
+           SmallImageSource="images/copy.png" LargeImageSource="images/copy.png" />
+                    <r:RibbonButton Label="Paste" 
+           SmallImageSource="images/paste.png" LargeImageSource="images/paste.png" />
+                </r:RibbonGroup>
+       
+           
+                    <r:RibbonGroup>
+                    
+
+                    <r:RibbonButton Label="Save" LargeImageSource="images\save.png" SmallImageSource="images\save_small.png"/>
+                    <r:RibbonButton Label="Save" LargeImageSource="images\save.png" SmallImageSource="images\save_small.png"/>
+                    <r:RibbonButton Label="Save" LargeImageSource="images\save.png" SmallImageSource="images\save_small.png"/>
+                    <r:RibbonButton Label="Save" LargeImageSource="images\save.png" SmallImageSource="images\save_small.png"/>
+                    <r:RibbonButton Label="Save" LargeImageSource="images\save.png" SmallImageSource="images\save_small.png"/>
+                    <r:RibbonButton Label="Save" LargeImageSource="images\save.png" SmallImageSource="images\save_small.png"/>
+                    <r:RibbonButton Label="Save" LargeImageSource="images\save.png" SmallImageSource="images\save_small.png"/>
+                    <r:RibbonButton Label="Save" LargeImageSource="images\save.png" SmallImageSource="images\save_small.png"/>
+                    <r:RibbonButton Label="Save" LargeImageSource="images\save.png" SmallImageSource="images\save_small.png"/>
+                    <r:RibbonButton Label="Save" LargeImageSource="images\save.png" SmallImageSource="images\save_small.png"/>
+                    <r:RibbonButton Label="Save" LargeImageSource="images\save.png" SmallImageSource="images\save_small.png"/>
+                    <r:RibbonButton Label="Save" LargeImageSource="images\save.png" SmallImageSource="images\save_small.png"/>
+                    <r:RibbonButton Label="Save" LargeImageSource="images\save.png" SmallImageSource="images\save_small.png"/>
+                </r:RibbonGroup>
+                
+                
+            </r:RibbonTab>
+        </r:Ribbon>
+    </Grid>
+</r:RibbonWindow>

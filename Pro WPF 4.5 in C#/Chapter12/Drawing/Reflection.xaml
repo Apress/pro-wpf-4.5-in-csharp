@@ -1,0 +1,27 @@
+﻿<Window x:Class="Drawing.Reflection"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Reflection" Height="208.8" Width="491.2" Background="LightSteelBlue"
+    >
+  <Grid Margin="10" Grid.IsSharedSizeScope="True" VerticalAlignment="Center">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" SharedSizeGroup="Row"></RowDefinition>
+      <RowDefinition SharedSizeGroup="Row"></RowDefinition>
+    </Grid.RowDefinitions>
+    <TextBox Name="txt" FontSize="30">Here is some reflected text</TextBox>
+    <Rectangle Grid.Row="1" RenderTransformOrigin="1,0.5">
+      <Rectangle.Fill>
+        <VisualBrush Visual="{Binding ElementName=txt}"></VisualBrush>
+      </Rectangle.Fill>
+      <Rectangle.OpacityMask>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+          <GradientStop Offset="0.3" Color="Transparent"></GradientStop>
+          <GradientStop Offset="1" Color="#44000000"></GradientStop>
+        </LinearGradientBrush>
+      </Rectangle.OpacityMask>
+      <Rectangle.RenderTransform>
+        <ScaleTransform ScaleY="-1"></ScaleTransform>
+      </Rectangle.RenderTransform>
+    </Rectangle>
+  </Grid>
+</Window>

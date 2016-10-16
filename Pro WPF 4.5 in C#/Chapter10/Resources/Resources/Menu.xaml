@@ -1,0 +1,18 @@
+﻿<Window x:Class="Resources.Menu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Menu" Height="321" Width="244"
+    >
+    <Grid>
+      <StackPanel Margin="5" Button.Click="ButtonClick">
+
+        <Button>WindowResource</Button>
+        <Button>DynamicResource</Button>
+        <Button>TwoResources</Button>
+        <Button>ResourceFromLibrary</Button>
+        
+
+      </StackPanel>
+        
+    </Grid>
+</Window>

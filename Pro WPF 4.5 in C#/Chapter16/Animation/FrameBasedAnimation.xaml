@@ -1,0 +1,18 @@
+﻿<Window x:Class="Animation.FrameBasedAnimation"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="FrameBasedAnimation" Height="396" Width="463.2"
+    >
+  <Grid Margin="3">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition></RowDefinition>
+    </Grid.RowDefinitions>
+
+    <StackPanel Orientation="Horizontal">
+      <Button Margin="3" Padding="3" Click="cmdStart_Clicked">Start</Button>
+      <Button Margin="3" Padding="3" Click="cmdStop_Clicked">Stop</Button>
+    </StackPanel>
+    <Canvas Name="canvas" Grid.Row="1" Margin="3"></Canvas>
+  </Grid>
+</Window>

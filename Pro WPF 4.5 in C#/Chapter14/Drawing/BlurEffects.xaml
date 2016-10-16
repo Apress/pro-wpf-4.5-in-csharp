@@ -1,0 +1,26 @@
+﻿<Window x:Class="Drawing.BlurEffects"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="BlurEffects" Height="300" Width="300">
+    
+    <StackPanel Margin="5">
+        <Button Content="Blurred (Radius=2)" Padding="5" Margin="3">
+            <Button.Effect>
+                <BlurEffect Radius="2"></BlurEffect>
+            </Button.Effect>
+        </Button>
+
+        <Button Content="Blurred (Radius=5)" Padding="5" Margin="3">
+            <Button.Effect>
+                <BlurEffect Radius="5"></BlurEffect>
+            </Button.Effect>
+        </Button>
+
+        <Button Content="Blurred (Radius=20)" Padding="5" Margin="3">
+            <Button.Effect>
+                <BlurEffect Radius="20"></BlurEffect>
+            </Button.Effect>
+        </Button>
+
+    </StackPanel>
+</Window>

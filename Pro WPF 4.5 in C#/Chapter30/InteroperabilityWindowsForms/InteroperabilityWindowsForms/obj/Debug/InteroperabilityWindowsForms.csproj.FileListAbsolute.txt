@@ -1,0 +1,12 @@
+D:\Code\Pro WPF\Chapter30\InteroperabilityWindowsForms\InteroperabilityWindowsForms\bin\Debug\InteroperabilityWindowsForms.exe.config
+D:\Code\Pro WPF\Chapter30\InteroperabilityWindowsForms\InteroperabilityWindowsForms\bin\Debug\InteroperabilityWindowsForms.exe
+D:\Code\Pro WPF\Chapter30\InteroperabilityWindowsForms\InteroperabilityWindowsForms\bin\Debug\InteroperabilityWindowsForms.pdb
+D:\Code\Pro WPF\Chapter30\InteroperabilityWindowsForms\InteroperabilityWindowsForms\bin\Debug\WPFWindowLibrary.dll
+D:\Code\Pro WPF\Chapter30\InteroperabilityWindowsForms\InteroperabilityWindowsForms\bin\Debug\WPFWindowLibrary.pdb
+D:\Code\Pro WPF\Chapter30\InteroperabilityWindowsForms\InteroperabilityWindowsForms\obj\Debug\InteroperabilityWindowsForms.csprojResolveAssemblyReference.cache
+D:\Code\Pro WPF\Chapter30\InteroperabilityWindowsForms\InteroperabilityWindowsForms\obj\Debug\InteroperabilityWindowsForms.Form1.resources
+D:\Code\Pro WPF\Chapter30\InteroperabilityWindowsForms\InteroperabilityWindowsForms\obj\Debug\InteroperabilityWindowsForms.MixedForm.resources
+D:\Code\Pro WPF\Chapter30\InteroperabilityWindowsForms\InteroperabilityWindowsForms\obj\Debug\InteroperabilityWindowsForms.Properties.Resources.resources
+D:\Code\Pro WPF\Chapter30\InteroperabilityWindowsForms\InteroperabilityWindowsForms\obj\Debug\InteroperabilityWindowsForms.csproj.GenerateResource.Cache
+D:\Code\Pro WPF\Chapter30\InteroperabilityWindowsForms\InteroperabilityWindowsForms\obj\Debug\InteroperabilityWindowsForms.exe
+D:\Code\Pro WPF\Chapter30\InteroperabilityWindowsForms\InteroperabilityWindowsForms\obj\Debug\InteroperabilityWindowsForms.pdb

@@ -1,0 +1,32 @@
+﻿<Window x:Class="CustomControlsClient.WrapBreakPanelTest"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="WrapPanelBreakTest" Height="300" Width="500"
+    xmlns:lib="clr-namespace:CustomControls;assembly=CustomControls"
+    >
+    <Grid>
+      
+      <StackPanel>
+        <StackPanel.Resources>
+          <Style TargetType="{x:Type Button}">
+            <Setter Property="Margin" Value="3"></Setter>
+            <Setter Property="Padding" Value="3"></Setter>
+          </Style>
+        </StackPanel.Resources>
+        <TextBlock Padding="5" Background="LightGray">Content above the WrapBreakPanel.</TextBlock>
+        <lib:WrapBreakPanel>
+          <Button>No Break Here</Button>
+          <Button>No Break Here</Button>
+          <Button>No Break Here</Button>
+          <Button>No Break Here</Button>
+          <Button lib:WrapBreakPanel.LineBreakBefore="True" FontWeight="Bold">Button with Break</Button>
+          <Button>No Break Here</Button>
+          <Button>No Break Here</Button>
+          <Button>No Break Here</Button>
+          <Button>No Break Here</Button>
+        </lib:WrapBreakPanel>
+        <TextBlock Padding="5" Background="LightGray">Content below the WrapBreakPanel.</TextBlock>
+    </StackPanel>
+  </Grid>
+</Window>
+

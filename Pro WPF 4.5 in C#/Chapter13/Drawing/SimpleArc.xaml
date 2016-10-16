@@ -1,0 +1,25 @@
+﻿<Window x:Class="Drawing.SimpleArc"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="SimpleArc" Height="300" Width="300"
+    >
+    <Grid>
+      <Path Stroke="Blue" StrokeThickness="3">
+        <Path.Data>
+          <PathGeometry>
+            <PathGeometry.Figures>
+              <PathFigureCollection>
+                <PathFigure IsClosed="False" StartPoint="250,150" >
+                  <PathFigure.Segments>
+                    <PathSegmentCollection>
+                      <ArcSegment Point="10,100" Size="200,300" SweepDirection="Clockwise" />
+                    </PathSegmentCollection>
+                  </PathFigure.Segments>
+                </PathFigure>
+              </PathFigureCollection>
+            </PathGeometry.Figures>
+          </PathGeometry>
+        </Path.Data>
+      </Path>
+    </Grid>
+</Window>

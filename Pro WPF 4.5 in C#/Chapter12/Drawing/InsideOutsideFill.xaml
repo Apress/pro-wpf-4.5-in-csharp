@@ -1,0 +1,17 @@
+﻿<Window x:Class="Drawing.InsideOutsideFill"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Drawing" Height="479" Width="462"
+    >
+  <Viewbox HorizontalAlignment="Left">
+    <Canvas Width="200" Height="400" >
+      <Polygon Stroke="Blue" StrokeThickness="1" Fill="Yellow" Canvas.Left="10"
+        Points="15,200 68,70 110,200 0,125 135,125" >
+      </Polygon>
+      <Polygon Stroke="Blue" StrokeThickness="1" Fill="Yellow" Canvas.Left="10" Canvas.Top="175"
+               FillRule="Nonzero"
+         Points="15,200 68,70 110,200 0,125 135,125" >
+      </Polygon>
+    </Canvas>
+  </Viewbox>
+</Window>

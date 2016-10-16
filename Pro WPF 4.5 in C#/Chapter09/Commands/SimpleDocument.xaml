@@ -1,0 +1,40 @@
+﻿<Window x:Class="Commands.SimpleDocument"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="SimpleDocument" Height="300" Width="300"    
+    >
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition></RowDefinition>
+      </Grid.RowDefinitions>
+      <Menu Grid.Row="0">
+        <MenuItem Header="File">
+          <MenuItem Command="New"></MenuItem>
+          <MenuItem Command="Open"></MenuItem>
+          <MenuItem Command="Save"></MenuItem>
+          <MenuItem Command="SaveAs"></MenuItem>
+          <Separator></Separator>
+          <MenuItem Command="Close"></MenuItem>
+        </MenuItem>
+      </Menu>
+
+      <ToolBarTray Grid.Row="1">
+        <ToolBar>
+        <Button Command="New">New</Button>
+          <Button Command="Open">Open</Button>
+          <Button Command="Save">Save</Button>        
+      </ToolBar>
+        <ToolBar>
+          <Button Command="Cut">Cut</Button>
+          <Button Command="Copy">Copy</Button>
+          <Button Command="Paste">Paste</Button>
+          
+        </ToolBar>
+      </ToolBarTray>
+      <TextBox Name="txt" Margin="5" Grid.Row="2" 
+               TextWrapping="Wrap" AcceptsReturn="True"
+               TextChanged="txt_TextChanged"></TextBox>
+    </Grid>
+</Window>

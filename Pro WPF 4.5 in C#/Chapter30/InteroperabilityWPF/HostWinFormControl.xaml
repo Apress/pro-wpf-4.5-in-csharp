@@ -1,0 +1,21 @@
+﻿<Window x:Class="InteroperabilityWPF.HostWinFormControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    Title="HostWinFormControl" Height="300" Width="300"
+    >
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+    </Grid.RowDefinitions>
+    
+    
+    <WindowsFormsHost Margin="10" Name="host">      
+      <wf:MaskedTextBox x:Name="maskedTextBox" Mask="(999)-000-0000" MaskInputRejected="maskedTextBox_MaskInputRejected" ValidatingType="{x:Type sys:Int32}"></wf:MaskedTextBox>
+    </WindowsFormsHost>
+
+    <Label Margin="5"  Name="lblErrorText" Grid.Row="1"></Label>
+  </Grid>
+</Window>

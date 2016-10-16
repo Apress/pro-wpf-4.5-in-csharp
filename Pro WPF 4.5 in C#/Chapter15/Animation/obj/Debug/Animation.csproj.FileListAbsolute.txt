@@ -1,0 +1,1 @@
+D:\Code\Pro WPF\Chapter15\Animation\bin\Debug\Animation.exe.config

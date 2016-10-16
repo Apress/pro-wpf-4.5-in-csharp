@@ -1,0 +1,9 @@
+﻿<Window x:Class="SimpleWindow.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="SimpleWindow" Height="338" Width="356">
+    <StackPanel Margin="5">
+      <Button Padding="5" Margin="5" Click="cmd_Click">First Button</Button>
+      <Button Padding="5" Margin="5" Click="cmd_Click">Second Button</Button>
+	</StackPanel>
+</Window>

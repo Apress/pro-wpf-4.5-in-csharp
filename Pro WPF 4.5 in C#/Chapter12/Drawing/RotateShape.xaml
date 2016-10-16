@@ -1,0 +1,75 @@
+﻿<Window x:Class="Drawing.RotateShape"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="RotateShape" Height="427" Width="332"
+    >
+  <Canvas>
+    <Rectangle Width="80" Height="10" Stroke="Blue" Fill="Yellow" 
+          Canvas.Left="100" Canvas.Top="100">      
+    </Rectangle>
+
+    <Rectangle Width="80" Height="10" Stroke="Blue" Fill="Yellow" 
+      Canvas.Left="100" Canvas.Top="100">
+      <Rectangle.RenderTransform>
+        <RotateTransform Angle="25" />
+      </Rectangle.RenderTransform>
+    </Rectangle>
+
+    <Rectangle Width="80" Height="10" Stroke="Blue" Fill="Yellow" 
+          Canvas.Left="100" Canvas.Top="100">
+      <Rectangle.RenderTransform>
+        <RotateTransform Angle="50" />
+      </Rectangle.RenderTransform>
+    </Rectangle>
+
+    <Rectangle Width="80" Height="10" Stroke="Blue" Fill="Yellow" 
+      Canvas.Left="100" Canvas.Top="100">
+      <Rectangle.RenderTransform>
+        <RotateTransform Angle="75" />
+      </Rectangle.RenderTransform>
+    </Rectangle>
+
+    <Rectangle Width="80" Height="10" Stroke="Blue" Fill="Yellow" 
+      Canvas.Left="100" Canvas.Top="100">
+      <Rectangle.RenderTransform>
+        <RotateTransform Angle="100" />
+      </Rectangle.RenderTransform>
+    </Rectangle>
+
+
+
+    <Rectangle Width="80" Height="10" Stroke="Blue" Fill="Yellow" 
+          Canvas.Left="100" Canvas.Top="300">
+    </Rectangle>
+
+    <Rectangle Width="80" Height="10" Stroke="Blue" Fill="Yellow" 
+      Canvas.Left="100" Canvas.Top="300">
+      <Rectangle.RenderTransform>
+        <RotateTransform Angle="25" CenterX="45" CenterY="5" />
+      </Rectangle.RenderTransform>
+    </Rectangle>
+
+    <Rectangle Width="80" Height="10" Stroke="Blue" Fill="Yellow" 
+      Canvas.Left="100" Canvas.Top="300">
+      <Rectangle.RenderTransform>
+        <RotateTransform Angle="50" CenterX="45" CenterY="5" />
+      </Rectangle.RenderTransform>
+    </Rectangle>
+    
+    <Rectangle Width="80" Height="10" Stroke="Blue" Fill="Yellow" 
+      Canvas.Left="100" Canvas.Top="300">
+      <Rectangle.RenderTransform>
+        <RotateTransform Angle="75" CenterX="45" CenterY="5" />
+      </Rectangle.RenderTransform>
+    </Rectangle>
+    
+    <Rectangle Width="80" Height="10" Stroke="Blue" Fill="Yellow" 
+      Canvas.Left="100" Canvas.Top="300">
+      <Rectangle.RenderTransform>
+        <RotateTransform Angle="100" CenterX="45" CenterY="5" />
+      </Rectangle.RenderTransform>
+    </Rectangle>
+  </Canvas>
+
+
+</Window>

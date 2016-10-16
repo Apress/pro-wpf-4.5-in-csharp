@@ -1,0 +1,20 @@
+﻿ControlTemplates
+
+
+winexe
+C#
+.cs
+D:\Code\Pro WPF\Chapter17\ControlTemplates\obj\Debug\
+ControlTemplates
+none
+false
+DEBUG;TRACE
+D:\Code\Pro WPF\Chapter17\ControlTemplates\App.xaml
+10566068234
+
+12-95279637
+16383847280
+ButtonTemplate.xaml;ButtonWithAnimations.xaml;Resources\GradientButtonWithStyleSetters.xaml;SimpleCustomButton.xaml;Resources\GradientButtonVariant.xaml;Resources\GradientButton.xaml;Resources\ListBox.xaml;MultiPartTemplates.xaml;Menu.xaml;GradientButtonTest.xaml;
+
+False
+

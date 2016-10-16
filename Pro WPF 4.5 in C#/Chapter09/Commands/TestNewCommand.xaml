@@ -1,0 +1,23 @@
+﻿<Window x:Class="Commands.TestNewCommand"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="TestNewCommand" Height="134" Width="281"
+    >
+  <Window.CommandBindings>
+    <CommandBinding Command="ApplicationCommands.New"
+      Executed="NewCommand" />
+  </Window.CommandBindings>
+
+  <StackPanel >
+    <Menu>
+      <MenuItem Header="File">
+        <MenuItem Command="New"></MenuItem>
+      </MenuItem>
+    </Menu>
+
+    <Button Margin="5" Padding="5" Command="ApplicationCommands.New"
+            ToolTip="{x:Static ApplicationCommands.New}">New</Button>
+    <Button Margin="5" Padding="5" Visibility="Hidden" Command="ApplicationCommands.Open">Open (unwired)</Button>
+      <Button Margin="5" Padding="5" Visibility="Hidden" Click="cmdDoCommand_Click" >DoCommand</Button>
+    </StackPanel>
+</Window>

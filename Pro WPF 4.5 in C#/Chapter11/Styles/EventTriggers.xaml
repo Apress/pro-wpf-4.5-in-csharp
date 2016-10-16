@@ -1,0 +1,56 @@
+﻿<Window x:Class="Styles.EventTriggers"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="EventTriggers" Height="300" Width="300"
+    >
+  <Window.Resources>
+    <Style x:Key="BigFontButton">
+      <Style.Setters>
+        <Setter Property="Control.FontFamily" Value="Times New Roman" />
+        <Setter Property="Control.FontSize" Value="18" />
+        <Setter Property="Control.FontWeight" Value="Bold" />
+      </Style.Setters>
+      
+      <Style.Triggers>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter">
+          <EventTrigger.Actions>
+            <BeginStoryboard>
+              <Storyboard>
+                <DoubleAnimation
+                  Duration="0:0:0.2"
+                  Storyboard.TargetProperty="FontSize"
+                  To="22"  />
+              </Storyboard>
+            </BeginStoryboard>
+          </EventTrigger.Actions>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseLeave">
+          <EventTrigger.Actions>
+            <BeginStoryboard>
+              <Storyboard>
+                <DoubleAnimation
+                  Duration="0:0:1"
+                  Storyboard.TargetProperty="FontSize"  />
+              </Storyboard>
+            </BeginStoryboard>
+          </EventTrigger.Actions>
+        </EventTrigger>
+
+      </Style.Triggers>
+    </Style>
+    
+  </Window.Resources>
+
+  <StackPanel Margin="5">
+    <Button Padding="5" Margin="5"
+            Style="{StaticResource BigFontButton}" 
+              >A Customized Button</Button>
+    <TextBlock Margin="5">Normal Content.</TextBlock>
+    <Button Padding="5" Margin="5"
+            >A Normal Button</Button>
+    <TextBlock Margin="5">More normal Content.</TextBlock>
+    <Button Padding="5" Margin="5"
+            Style="{StaticResource BigFontButton}" 
+              >Another Customized Button</Button>
+  </StackPanel>
+</Window>

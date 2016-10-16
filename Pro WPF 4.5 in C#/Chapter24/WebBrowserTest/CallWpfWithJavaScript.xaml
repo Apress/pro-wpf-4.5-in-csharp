@@ -1,0 +1,10 @@
+﻿<Window x:Class="WebBrowserTest.CallWpfWithJavaScript"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CallWpfWithJavaScript" Height="300" Width="300">
+    <Grid>
+
+        <WebBrowser x:Name="webBrowser" Margin="10"></WebBrowser>
+
+    </Grid>
+</Window>

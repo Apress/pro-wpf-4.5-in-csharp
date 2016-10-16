@@ -1,0 +1,42 @@
+﻿<Window x:Class="MenusAndToolbars.MenuWithSubheading"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MenuWithSubheading" Height="300" Width="300"
+    >
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition></RowDefinition>
+      </Grid.RowDefinitions>
+      
+        <Menu>
+          <MenuItem Header="File">
+            <MenuItem Header="New"></MenuItem>
+            <MenuItem Header="Open"></MenuItem>
+            <MenuItem Header="Save"></MenuItem>
+            <Separator></Separator>
+            <MenuItem Header="Exit"></MenuItem>
+          </MenuItem>
+          <MenuItem Header="Edit">
+            <MenuItem Header="Undo"></MenuItem>
+            <MenuItem Header="Redo"></MenuItem>
+            <Separator>
+              <Separator.Template>
+                <ControlTemplate>
+                  <Border CornerRadius="2" Padding="5" BorderBrush="Black" BorderThickness="1" Background="PaleGoldenrod">
+                    <TextBlock FontWeight="Bold">
+                      Editing Commands
+                    </TextBlock>
+                  </Border>
+                </ControlTemplate>
+              </Separator.Template>
+            </Separator>
+            <MenuItem Header="Cut"></MenuItem>
+            <MenuItem Header="Copy"></MenuItem>
+            <MenuItem Header="Paste"></MenuItem>
+          </MenuItem>
+
+        </Menu>
+      
+    </Grid>
+</Window>

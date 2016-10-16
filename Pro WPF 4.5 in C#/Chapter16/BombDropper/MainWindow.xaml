@@ -1,0 +1,46 @@
+﻿<Window x:Class="BombDropper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="BombDropper" Height="500" Width="600">
+
+    <Grid x:Name="LayoutRoot">
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition></ColumnDefinition>
+        <ColumnDefinition Width="280"></ColumnDefinition>
+    </Grid.ColumnDefinitions>
+
+
+    <Border BorderBrush="SteelBlue" BorderThickness="1" Margin="5">
+        <Grid>
+            <Canvas x:Name="canvasBackground" SizeChanged="canvasBackground_SizeChanged" MinWidth="50">
+                <Canvas.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="AliceBlue" Offset="0"></GradientStop>
+                        <GradientStop Color="White" Offset="0.7"></GradientStop>
+                    </RadialGradientBrush>
+                </Canvas.Background>
+            </Canvas>
+        </Grid>
+    </Border>
+
+    <Border Grid.Column="1" BorderBrush="SteelBlue" BorderThickness="1" Margin="5">
+        <Border.Background>
+            <RadialGradientBrush GradientOrigin="1,0.7" Center="1,0.7" RadiusX="1" RadiusY="1">
+                <GradientStop Color="Orange"  Offset="0"></GradientStop>
+                <GradientStop Color="White" Offset="1"></GradientStop>
+            </RadialGradientBrush>
+        </Border.Background>
+        <StackPanel Margin="15" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock FontFamily="Impact" FontSize="35" Foreground="LightSteelBlue">Bomb Dropper</TextBlock>
+            <TextBlock x:Name="lblRate" Margin="0,30,0,0" TextWrapping="Wrap" FontFamily="Georgia" FontSize="14"></TextBlock>
+            <TextBlock x:Name="lblSpeed" Margin="0,30" TextWrapping="Wrap" FontFamily="Georgia" FontSize="14"></TextBlock>
+            <TextBlock x:Name="lblStatus" 
+			 TextWrapping="Wrap" FontFamily="Georgia" FontSize="20">No bombs have dropped.</TextBlock>
+            <Button x:Name="cmdStart" Padding="5" Margin="0,30" Width="80" Content="Start Game" Click="cmdStart_Click"></Button>
+        </StackPanel>
+
+    </Border>
+    </Grid>
+
+
+</Window>

@@ -1,0 +1,18 @@
+﻿<Window x:Class="Drawing.ClippingWithViewbox"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ClippingWithViewbox" Height="335.2" Width="401.6"
+    >
+  <Window.Resources>
+    <GeometryGroup x:Key="clipGeometry" FillRule="Nonzero">
+      <EllipseGeometry RadiusX="75" RadiusY="50" Center="100,150"></EllipseGeometry>
+      <EllipseGeometry RadiusX="100" RadiusY="25" Center="200,150"></EllipseGeometry>
+      <EllipseGeometry RadiusX="75" RadiusY="130" Center="140,140"></EllipseGeometry>
+    </GeometryGroup>
+  </Window.Resources>
+  <Grid>
+    <Viewbox >
+      <Button Width="350" Height="350" Clip="{StaticResource clipGeometry}">A button</Button>
+    </Viewbox>
+  </Grid>
+</Window>

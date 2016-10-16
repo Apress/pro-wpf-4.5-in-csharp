@@ -1,0 +1,7 @@
+﻿<Window x:Class="Windows.WindowOwnership"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Owner" Height="300" Width="300"
+    >
+  <Button Margin="3" Click="cmdCreate_Click">Create Owned Window</Button>
+</Window>

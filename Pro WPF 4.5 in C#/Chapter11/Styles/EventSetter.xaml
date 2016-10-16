@@ -1,0 +1,19 @@
+﻿<Window x:Class="Styles.EventSetter"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="EventSetter" Height="300" Width="300"
+    >
+  <Window.Resources>
+    <Style x:Key="MouseOverHighlightStyle">
+      <Setter Property="TextBlock.Padding" Value="5"/>
+      <EventSetter Event="FrameworkElement.MouseEnter" Handler="element_MouseEnter" />
+      <EventSetter Event="FrameworkElement.MouseLeave" Handler="element_MouseLeave" />
+    </Style>
+  </Window.Resources>
+  
+  <StackPanel>
+    <TextBlock Style="{StaticResource MouseOverHighlightStyle}">Hover over me.</TextBlock>
+    <TextBlock Padding="5">Don't bother with me.</TextBlock>
+    <TextBlock Style="{StaticResource MouseOverHighlightStyle}">Hover over me.</TextBlock>
+  </StackPanel>
+</Window>

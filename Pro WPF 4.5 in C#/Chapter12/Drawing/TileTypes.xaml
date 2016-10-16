@@ -1,0 +1,44 @@
+﻿<Window x:Class="Drawing.TileTypes"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="TileTypes" Height="500" Width="296.8"
+    >
+  <Grid Margin="5">
+    <Grid.RowDefinitions>
+      <RowDefinition></RowDefinition>
+      <RowDefinition></RowDefinition>
+      <RowDefinition></RowDefinition>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="Auto"></ColumnDefinition>
+      <ColumnDefinition></ColumnDefinition>
+    </Grid.ColumnDefinitions>
+
+    <TextBlock Margin="3">Fixed Tiles</TextBlock>
+    <Rectangle Grid.Column="1" Stroke="Black">
+      <Rectangle.Fill>
+        <ImageBrush ImageSource="tile.jpg" TileMode="Tile"
+                    ViewportUnits="Absolute" Viewport="0 0 37 37"></ImageBrush>
+      </Rectangle.Fill>
+    </Rectangle>
+
+    <TextBlock Grid.Row="1" Margin="3">Proportional Tiles</TextBlock>
+    <Rectangle Grid.Row="1" Grid.Column="1" Stroke="Black">
+      <Rectangle.Fill>
+        <ImageBrush ImageSource="tile.jpg" TileMode="Tile"
+                    Viewport="0 0 0.2 0.2"></ImageBrush>
+      </Rectangle.Fill>
+    </Rectangle>
+
+    <TextBlock Grid.Row="2" Margin="3">
+      Proportional Tiles<LineBreak></LineBreak>(no stretch)
+    </TextBlock>
+    <Rectangle Grid.Row="2" Grid.Column="1" Stroke="Black">
+      <Rectangle.Fill>
+        <ImageBrush ImageSource="tile.jpg" TileMode="Tile" Stretch="None"
+                    Viewport="0 0 0.2 0.2"></ImageBrush>
+      </Rectangle.Fill>
+    </Rectangle>
+
+  </Grid>
+</Window>

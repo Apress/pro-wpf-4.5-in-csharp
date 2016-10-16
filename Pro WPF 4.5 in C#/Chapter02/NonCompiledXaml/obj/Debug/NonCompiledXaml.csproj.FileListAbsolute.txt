@@ -1,0 +1,1 @@
+D:\Code\Pro WPF\Chapter02\NonCompiledXaml\bin\Debug\NonCompiledXaml.exe.config

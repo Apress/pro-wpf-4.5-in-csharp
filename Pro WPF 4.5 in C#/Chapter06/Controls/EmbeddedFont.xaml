@@ -1,0 +1,10 @@
+﻿<Window x:Class="Controls.EmbeddedFont"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Controls" Height="300" Width="300"
+    >
+    <Grid>
+      <Label Name="tst" FontSize="20" FontFamily="./#Bayern"
+             >This is an embedded font</Label>
+    </Grid>
+</Window>

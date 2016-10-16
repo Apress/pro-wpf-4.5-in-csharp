@@ -1,0 +1,15 @@
+﻿<Window x:Class="ControlTemplateBrowser.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ControlTemplateBrowser" Height="544" Width="713" Loaded="Window_Loaded"
+    >
+    <Grid Margin="10" Name="grid">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"></ColumnDefinition>
+        <ColumnDefinition Width="3*"></ColumnDefinition>
+      </Grid.ColumnDefinitions>
+      <ListBox DisplayMemberPath="Name" Name="lstTypes" SelectionChanged="lstTypes_SelectionChanged"></ListBox>
+      <TextBox Grid.Column="1" Name="txtTemplate" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" FontFamily="Consolas"></TextBox>
+      
+    </Grid>
+</Window>

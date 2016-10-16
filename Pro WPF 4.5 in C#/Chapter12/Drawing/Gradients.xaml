@@ -1,0 +1,71 @@
+﻿<Window x:Class="Drawing.Gradients"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Gradients" Height="587" Width="347"
+    >
+  <Grid Margin="5">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition></ColumnDefinition>
+      <ColumnDefinition Width="Auto"></ColumnDefinition>
+    </Grid.ColumnDefinitions>
+  
+  <Rectangle Width="150" Height="100" Margin="5">
+    <Rectangle.Fill>
+      <LinearGradientBrush >
+        <GradientStop Color="Blue" Offset="0"/>
+        <GradientStop Color="White" Offset="1" />
+      </LinearGradientBrush>
+    </Rectangle.Fill>
+  </Rectangle>
+    <TextBlock Grid.Column="1" VerticalAlignment="Center" Margin="5">Diagonal Linear Gradient</TextBlock>
+
+    <Rectangle Width="150" Height="100" Margin="5" Grid.Row="1">
+    <Rectangle.Fill>
+      <LinearGradientBrush>
+        <GradientStop Color="Blue" Offset="0"/>
+        <GradientStop Color="White" Offset="0.5" />
+      </LinearGradientBrush>
+    </Rectangle.Fill>
+    </Rectangle>
+    <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Margin="5">With 0.5 Offset for White</TextBlock>
+
+    <Rectangle Width="150" Height="100" Grid.Row="2" Margin="5">
+      <Rectangle.Fill>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" >
+          <GradientStop Color="Blue" Offset="0"/>
+          <GradientStop Color="White" Offset="1" />
+        </LinearGradientBrush>
+      </Rectangle.Fill>
+    </Rectangle>
+    <TextBlock Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Margin="5">Horizontal Linear Gradient</TextBlock>
+
+    <Rectangle Width="150" Height="100" Grid.Row="3" Margin="5">
+      <Rectangle.Fill>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,0.5" SpreadMethod="Reflect">
+          <GradientStop Color="Blue" Offset="0"/>
+          <GradientStop Color="White" Offset="1" />
+        </LinearGradientBrush>
+      </Rectangle.Fill>
+    </Rectangle>
+    <TextBlock Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Margin="5">Reflected Gradient</TextBlock>
+    
+    <Rectangle Width="150" Height="100" Grid.Row="4" Margin="5">
+      <Rectangle.Fill>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+          <GradientStop Color="Yellow" Offset="0.0" />
+          <GradientStop Color="Red" Offset="0.25" />
+          <GradientStop Color="Blue" Offset="0.75" />
+          <GradientStop Color="LimeGreen" Offset="1.0" />
+        </LinearGradientBrush>
+      </Rectangle.Fill>
+    </Rectangle>
+    <TextBlock Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Margin="5">Multicolored Gradient</TextBlock>
+  </Grid>
+</Window>

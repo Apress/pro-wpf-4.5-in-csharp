@@ -1,0 +1,13 @@
+﻿<Page x:Class="NavigationApplication.ExternalLinks"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ExternalLinks" 
+    >
+  <TextBlock Margin="3" TextWrapping="Wrap">
+    Visit the website
+    <Hyperlink NavigateUri="http://www.prosetech.com">www.prosetech.com</Hyperlink>.
+    <LineBreak />
+    Visit a website that
+    <Hyperlink NavigateUri="http://www.does-not-exist">does not exist</Hyperlink>.
+  </TextBlock>
+</Page>

@@ -1,0 +1,14 @@
+﻿<Window x:Class="Controls.LogicalScrolling"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="LogicalScrolling" Height="285" Width="319"
+    >
+  <ScrollViewer CanContentScroll="True">
+  <StackPanel >
+    <Button Height="100">1</Button>
+    <Button Height="100">2</Button>
+    <Button Height="100">3</Button>
+    <Button Height="100">4</Button>
+  </StackPanel>
+  </ScrollViewer>
+</Window>

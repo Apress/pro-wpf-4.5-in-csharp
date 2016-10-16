@@ -1,0 +1,14 @@
+﻿<Page x:Class="NavigationApplication.EmbeddedPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    WindowTitle="EmbeddedPage"
+    >
+  <StackPanel Margin="5">
+    <TextBlock Margin="5" TextWrapping="Wrap">
+      This page contains an embedded page in a frame.      
+    </TextBlock>
+
+    <Frame Name="embeddedFrame" Margin="5" Source="Page1.xaml" BorderThickness="1" BorderBrush="Blue"></Frame>
+    <CheckBox Name="chkOwnsJournal" Margin="5" Click="chkOwnsJournal_Click">Embedded Frame Owns Journal</CheckBox>
+  </StackPanel>
+</Page>

@@ -1,0 +1,72 @@
+﻿<Window x:Class="SoundAndVideo.DeclarativePlayback"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="DeclarativePlayback" Height="234.4" Width="304"
+
+    >
+  <Window.Resources>
+
+    
+      <Storyboard x:Key="MediaStoryboardResource" SlipBehavior="Slip">
+      <MediaTimeline Storyboard.TargetName="media" Source="test.mp3" FillBehavior="HoldEnd" 
+                     ></MediaTimeline>
+
+      </Storyboard>
+  </Window.Resources>
+  
+    <Grid Margin="5">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition Height="Auto"></RowDefinition>
+        
+      </Grid.RowDefinitions>
+        <Grid.Triggers>          
+            <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="cmdPlay">
+              <EventTrigger.Actions>
+                <BeginStoryboard Name="MediaStoryboard" Storyboard="{StaticResource MediaStoryboardResource}"/>
+              </EventTrigger.Actions>
+            </EventTrigger>
+            <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="cmdStop">
+              <EventTrigger.Actions>
+                <StopStoryboard BeginStoryboardName="MediaStoryboard"/>
+              </EventTrigger.Actions>
+            </EventTrigger>
+            <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="cmdPause">
+              <EventTrigger.Actions>
+                <PauseStoryboard BeginStoryboardName="MediaStoryboard"/>
+              </EventTrigger.Actions>
+            </EventTrigger>
+            <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="cmdResume">
+              <EventTrigger.Actions>
+                <ResumeStoryboard BeginStoryboardName="MediaStoryboard"/>
+              </EventTrigger.Actions>
+            </EventTrigger>          
+        </Grid.Triggers>
+
+      <MediaElement Name="media"></MediaElement>
+      <StackPanel Orientation="Horizontal">
+        <Button Name="cmdPlay" Padding="5" Margin="1">Play</Button>
+        <Button Name="cmdStop" Padding="5" Margin="1">Stop</Button>
+        <Button Name="cmdPause" Padding="5" Margin="1">Pause</Button>
+        <Button Name="cmdResume" Padding="5" Margin="1">Resume</Button>
+        </StackPanel>
+
+      <Grid Margin="0,10,0,0" Grid.Row="2">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"></RowDefinition>
+          <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="Auto"></ColumnDefinition>
+          <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Margin="5">Volume: </TextBlock>
+        <Slider Grid.Column="1" Minimum="0" Maximum="1"
+              Value="{Binding ElementName=media, Path=Volume, Mode=TwoWay}"></Slider>
+        <TextBlock Margin="5" Grid.Row="1">Balance: </TextBlock>
+      <Slider Grid.Row="1" Grid.Column="1" Minimum="-1" Maximum="1"
+        Value="{Binding ElementName=media, Path=Balance, Mode=TwoWay}"></Slider>
+      </Grid>
+    </Grid>
+  
+</Window>

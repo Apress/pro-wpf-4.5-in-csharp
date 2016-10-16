@@ -1,0 +1,31 @@
+﻿<Window x:Class="Styles.StyleInheritance"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="StyleInheritance" Height="300" Width="300"
+    >
+  <Window.Resources>
+    <Style x:Key="BigFontButtonStyle">
+      <Setter Property="Control.FontFamily" Value="Times New Roman" />
+      <Setter Property="Control.FontSize" Value="18" />
+      <Setter Property="Control.FontWeight" Value="Bold" />
+    </Style>
+
+    <Style x:Key="EmphasizedBigFontButtonStyle" BasedOn="{StaticResource BigFontButtonStyle}">
+      <Setter Property="Control.Foreground" Value="White" />
+      <Setter Property="Control.Background" Value="DarkBlue" />
+    </Style>
+  </Window.Resources>
+
+  <StackPanel Margin="5">
+    <Button Padding="5" Margin="5"
+            Style="{StaticResource BigFontButtonStyle}" 
+              >Uses BigFontButtonStyle</Button>
+    <TextBlock Margin="5">Normal Content.</TextBlock>
+    <Button Padding="5" Margin="5"
+            >A Normal Button</Button>
+    <TextBlock Margin="5">More normal Content.</TextBlock>
+    <Button Padding="5" Margin="5"
+            Style="{StaticResource EmphasizedBigFontButtonStyle}" 
+              >Uses EmphasizedBigFontButtonStyle</Button>
+  </StackPanel>
+</Window>

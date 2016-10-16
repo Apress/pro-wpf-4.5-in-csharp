@@ -1,0 +1,25 @@
+﻿<Window x:Class="Multitouch.Manipulations"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Manipulations" Height="349" Width="607">
+    
+    <Grid>
+        <Canvas x:Name="canvas" ManipulationStarting="image_ManipulationStarting"  ManipulationDelta="image_ManipulationDelta">
+            <Image Canvas.Top="10" Canvas.Left="10" Width="200" IsManipulationEnabled="True" Source="koala.jpg">
+                <Image.RenderTransform>
+                    <MatrixTransform></MatrixTransform>
+                </Image.RenderTransform>
+            </Image>
+            <Image Canvas.Top="30" Canvas.Left="350" Width="200" IsManipulationEnabled="True" Source="penguins.jpg">
+                <Image.RenderTransform>
+                    <MatrixTransform></MatrixTransform>
+                </Image.RenderTransform>
+            </Image>
+            <Image Canvas.Top="100" Canvas.Left="200" Width="200" IsManipulationEnabled="True" Source="tulips.jpg">
+                <Image.RenderTransform>
+                    <MatrixTransform></MatrixTransform>
+                </Image.RenderTransform>
+            </Image>
+        </Canvas>
+    </Grid>
+</Window>

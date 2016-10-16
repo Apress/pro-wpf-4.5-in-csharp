@@ -1,0 +1,34 @@
+﻿<Window x:Class="MenusAndToolbars.ToolbarTrays"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ToolbarTrays" Height="300" Width="300"
+    >
+  <DockPanel>
+    <ToolBarTray DockPanel.Dock="Top" >
+      <ToolBar>
+        <Button ToolBar.OverflowMode="Never">One</Button>
+        <Button>Two</Button>
+        <Button>Three</Button>
+      </ToolBar>
+      <ToolBar>
+        <Button ToolBar.OverflowMode="Never">A</Button>
+        <Button ToolBar.OverflowMode="Never">B</Button>
+        <Button>C</Button>
+      </ToolBar>      
+      <ToolBar Band="1">
+        <Button>Red</Button>
+        <Button>Blue</Button>        
+        <Button>Green</Button>
+        <Button>Black</Button>
+      </ToolBar>
+    </ToolBarTray>    
+    <!--<ToolBarTray DockPanel.Dock="Left" Orientation="Vertical">
+      <ToolBar>
+        <Button>One</Button>
+        <Button>One</Button>
+        <Button>One</Button>
+      </ToolBar>
+    </ToolBarTray>-->
+    <TextBox></TextBox>
+  </DockPanel>
+</Window>

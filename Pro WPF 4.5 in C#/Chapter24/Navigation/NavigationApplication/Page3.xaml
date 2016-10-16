@@ -1,0 +1,14 @@
+﻿<Page x:Class="NavigationApplication.Page3"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Page3" WindowTitle="Page3" Loaded="Init"
+    >
+  <StackPanel Margin="3" Name="pnl">
+    <TextBlock Margin="3" TextWrapping="Wrap">
+      This is a Page3.xaml.
+      Click <Hyperlink NavigateUri="Menu.xaml">here</Hyperlink> to go to the Menu.
+    </TextBlock>
+
+
+  </StackPanel>
+</Page>

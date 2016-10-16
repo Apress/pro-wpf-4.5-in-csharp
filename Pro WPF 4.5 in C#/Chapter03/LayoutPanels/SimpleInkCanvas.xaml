@@ -1,0 +1,23 @@
+﻿<Window x:Class="LayoutPanels.SimpleInkCanvas"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="SimpleInkCanvas" Height="300" Width="300"
+    >
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition></RowDefinition>
+      </Grid.RowDefinitions>
+      <StackPanel Margin="5" Orientation="Horizontal">
+        <TextBlock Margin="5">EditingMode: </TextBlock>
+        <ComboBox Name="lstEditingMode"  VerticalAlignment="Center">          
+        </ComboBox>
+      </StackPanel>
+      
+      <InkCanvas Name="inkCanvas" Grid.Row="1" Background="LightYellow" EditingMode="{Binding ElementName=lstEditingMode,Path=SelectedItem}">
+        <Button InkCanvas.Top="10" InkCanvas.Left="10">Hello</Button>
+        <!--<Image Source="office.jpg" InkCanvas.Top="10" InkCanvas.Left="10"
+               Width="287" Height="319"></Image>-->
+      </InkCanvas>
+    </Grid>
+</Window>

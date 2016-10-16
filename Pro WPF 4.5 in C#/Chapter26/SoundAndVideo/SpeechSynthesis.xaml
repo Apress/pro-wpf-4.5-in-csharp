@@ -1,0 +1,17 @@
+﻿<Window x:Class="SoundAndVideo.SpeechSynthesis"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="SpeechSynthesis" Height="300" Width="300"
+    >
+    <Grid Margin="5">
+      <Grid.RowDefinitions>
+        <RowDefinition></RowDefinition>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition Height="Auto"></RowDefinition>
+      </Grid.RowDefinitions>
+      <TextBox Name="txtWords" Margin="5"
+               ScrollViewer.HorizontalScrollBarVisibility="Visible" TextWrapping="Wrap">Hello, world</TextBox>
+      <Button Margin="5" Grid.Row="1" Click="cmdSpeak_Click">Speak</Button>
+      <Button Margin="5" Grid.Row="2" Click="cmdPromptTest_Click">Prompt Test</Button>
+    </Grid>
+</Window>

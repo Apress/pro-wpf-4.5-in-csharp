@@ -1,0 +1,23 @@
+﻿<Window x:Class="Animation.Menu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Menu" Height="405.8" Width="254.4"
+    >
+    <Grid>
+      <StackPanel Margin="5" Button.Click="ButtonClick">
+               
+        <Button>RotateButton</Button>
+        <Button>RotateButtonWithLayout</Button>
+        <Button>ExpandElement</Button>
+        <Button>AnimateRadialGradient</Button>
+        <Button>AnimateVisual</Button>
+        <Button>BlurringButtons</Button>
+        <Button>ExpandElement2</Button>
+        <Button>KeySplineAnimation</Button>
+        <Button>PathBasedAnimation</Button>
+        <Button>FrameBasedAnimation</Button>
+            
+        </StackPanel>
+        
+    </Grid>
+</Window>

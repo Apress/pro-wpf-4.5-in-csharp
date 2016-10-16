@@ -1,0 +1,15 @@
+﻿<Window x:Class="LayoutPanels.SimpleDock"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="SimpleDock" Height="300" Width="300"
+    >
+    <DockPanel LastChildFill="True">
+      <Button DockPanel.Dock="Top">A Stretched Top Button</Button>
+      <Button DockPanel.Dock="Top" HorizontalAlignment="Center">A Centered Top Button</Button>
+      <Button DockPanel.Dock="Top" HorizontalAlignment="Left">A Left-Aligned Top Button</Button>
+      <Button DockPanel.Dock="Bottom">Bottom Button</Button>
+      <Button DockPanel.Dock="Left">Left Button</Button>
+      <Button DockPanel.Dock="Right">Right Button</Button>
+      <Button >Remaining Space</Button>
+    </DockPanel>
+</Window>

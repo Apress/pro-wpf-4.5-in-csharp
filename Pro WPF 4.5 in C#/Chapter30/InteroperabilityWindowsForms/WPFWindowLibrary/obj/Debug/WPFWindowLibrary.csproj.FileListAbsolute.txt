@@ -1,0 +1,13 @@
+D:\Code\Pro WPF\Chapter30\InteroperabilityWindowsForms\WPFWindowLibrary\bin\Debug\WPFWindowLibrary.dll
+D:\Code\Pro WPF\Chapter30\InteroperabilityWindowsForms\WPFWindowLibrary\bin\Debug\WPFWindowLibrary.pdb
+D:\Code\Pro WPF\Chapter30\InteroperabilityWindowsForms\WPFWindowLibrary\obj\Debug\WPFWindowLibrary.csprojResolveAssemblyReference.cache
+D:\Code\Pro WPF\Chapter30\InteroperabilityWindowsForms\WPFWindowLibrary\obj\Debug\UserControl1.baml
+D:\Code\Pro WPF\Chapter30\InteroperabilityWindowsForms\WPFWindowLibrary\obj\Debug\Window1.baml
+D:\Code\Pro WPF\Chapter30\InteroperabilityWindowsForms\WPFWindowLibrary\obj\Debug\UserControl1.g.cs
+D:\Code\Pro WPF\Chapter30\InteroperabilityWindowsForms\WPFWindowLibrary\obj\Debug\Window1.g.cs
+D:\Code\Pro WPF\Chapter30\InteroperabilityWindowsForms\WPFWindowLibrary\obj\Debug\WPFWindowLibrary_MarkupCompile.cache
+D:\Code\Pro WPF\Chapter30\InteroperabilityWindowsForms\WPFWindowLibrary\obj\Debug\WPFWindowLibrary.g.resources
+D:\Code\Pro WPF\Chapter30\InteroperabilityWindowsForms\WPFWindowLibrary\obj\Debug\WPFWindowLibrary.Properties.Resources.resources
+D:\Code\Pro WPF\Chapter30\InteroperabilityWindowsForms\WPFWindowLibrary\obj\Debug\WPFWindowLibrary.csproj.GenerateResource.Cache
+D:\Code\Pro WPF\Chapter30\InteroperabilityWindowsForms\WPFWindowLibrary\obj\Debug\WPFWindowLibrary.dll
+D:\Code\Pro WPF\Chapter30\InteroperabilityWindowsForms\WPFWindowLibrary\obj\Debug\WPFWindowLibrary.pdb

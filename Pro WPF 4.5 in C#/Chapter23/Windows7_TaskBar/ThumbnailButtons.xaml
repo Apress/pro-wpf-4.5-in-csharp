@@ -1,0 +1,27 @@
+﻿<Window x:Class="Windows7_TaskBar.ThumbnailButtons"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ThumbnailButtons" Height="300" Width="300">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+            <Button Margin="5" Click="cmdPlay_Click">
+                <Image Source="play-big.png" Stretch="None" ></Image>
+            </Button>
+            <Button Margin="5" Click="cmdPause_Click">
+                <Image Source="pause-big.png" Stretch="None"></Image>
+            </Button>
+        </StackPanel>
+    </Grid>
+
+    <Window.TaskbarItemInfo>
+        <TaskbarItemInfo x:Name="taskBarItem">
+            <TaskbarItemInfo.ThumbButtonInfos>
+                <ThumbButtonInfo ImageSource="play.png" Description="Play"
+     Click="cmdPlay_Click"></ThumbButtonInfo>
+                <ThumbButtonInfo ImageSource="pause.png" Description="Pause"
+     Click="cmdPause_Click"></ThumbButtonInfo>
+            </TaskbarItemInfo.ThumbButtonInfos>
+        </TaskbarItemInfo>
+    </Window.TaskbarItemInfo>
+
+</Window>

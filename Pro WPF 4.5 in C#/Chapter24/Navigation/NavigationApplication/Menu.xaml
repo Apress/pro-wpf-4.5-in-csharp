@@ -1,0 +1,24 @@
+﻿<Page x:Class="NavigationApplication.Menu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    WindowTitle="Menu" Title="Main Menu">
+    <Grid Margin="3">
+      <TextBlock>
+        <Hyperlink NavigateUri="EmbeddedPage.xaml">EmbeddedPage</Hyperlink>
+        <LineBreak />
+        <Hyperlink NavigateUri="ExternalWebLinks.xaml">ExternalWebLinks</Hyperlink>
+        <LineBreak />
+        <Hyperlink NavigateUri="LinkToPageInLibrary.xaml">LinkToPageInLibrary</Hyperlink>
+        <LineBreak />
+        <Hyperlink NavigateUri="PageWithPersistentData.xaml">PageWithPersistentData</Hyperlink>
+        <LineBreak />
+        <Hyperlink NavigateUri="Page1.xaml">A three-page sequence that clears the journal at the end</Hyperlink>
+        <LineBreak />
+        <Hyperlink NavigateUri="PageWithMultipleJournalEntries.xaml">PageWithMultipleJournalEntries</Hyperlink>
+        <LineBreak />
+        <Hyperlink NavigateUri="PageFunctionCall.xaml">PageFunctionCall</Hyperlink>
+
+      </TextBlock>
+        
+    </Grid>
+</Page>

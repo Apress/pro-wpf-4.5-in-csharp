@@ -1,0 +1,44 @@
+﻿<Window x:Class="Printing.PrintQueues"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="PrintQueues" Height="424" Width="452" Loaded="Window_Loaded"
+    >
+    <Grid Margin="5" >
+      <Grid.RowDefinitions>
+        <RowDefinition></RowDefinition>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition></RowDefinition>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition Height="Auto"></RowDefinition>
+      </Grid.RowDefinitions>
+      <ListBox Name="lstQueues" SelectionChanged="lstQueues_SelectionChanged" Margin="3"></ListBox>
+      <TextBlock Grid.Row="1" Name="lblQueueStatus" Margin="3">[No queue status]</TextBlock>
+      <Grid Grid.Row="2" Margin="0,0,0,10">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition></ColumnDefinition>
+          <ColumnDefinition></ColumnDefinition>
+          <ColumnDefinition></ColumnDefinition>
+          <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button Click="cmdPauseQueue_Click" Padding="3" Margin="3">Pause Queue</Button>
+        <Button Click="cmdResumeQueue_Click" Padding="3" Margin="3" Grid.Column="1">Resume Queue</Button>
+        <Button Click="cmdPurgeQueue_Click" Padding="3" Margin="3" Grid.Column="2">Purge Queue</Button>
+        <Button Click="cmdRefreshQueue_Click" Padding="3" Margin="3" Grid.Column="3">Refresh Queue</Button>
+      </Grid>
+      <ListBox Grid.Row="3" Name="lstJobs" Margin="3" SelectionChanged="lstJobs_SelectionChanged"></ListBox>
+      <TextBlock Grid.Row="4" Name="lblJobStatus" Margin="3">[No job status]</TextBlock>
+      <Grid Grid.Row="5" >
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition></ColumnDefinition>
+          <ColumnDefinition></ColumnDefinition>
+          <ColumnDefinition></ColumnDefinition>
+          <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button Click="cmdPauseJob_Click" Padding="3" Margin="3">Pause Job</Button>
+        <Button Click="cmdResumeJob_Click" Padding="3" Margin="3" Grid.Column="1">Resume Job</Button>
+        <Button Click="cmdCancelJob_Click" Padding="3" Margin="3" Grid.Column="2">Purge Job</Button>
+        <Button Click="cmdRefreshJob_Click" Padding="3" Margin="3" Grid.Column="3">Refresh Job</Button>
+      </Grid>
+    </Grid>
+</Window>

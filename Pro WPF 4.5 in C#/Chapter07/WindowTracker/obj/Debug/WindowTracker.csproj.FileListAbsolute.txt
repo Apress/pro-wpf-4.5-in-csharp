@@ -1,0 +1,1 @@
+D:\Code\Pro WPF\Chapter07\WindowTracker\bin\Debug\WindowsApplication1.exe.config

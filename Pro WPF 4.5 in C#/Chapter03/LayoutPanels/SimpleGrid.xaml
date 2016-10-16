@@ -1,0 +1,22 @@
+﻿<Window x:Class="LayoutPanels.SimpleGrid"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="SimpleGrid" Height="300" Width="300"
+    >
+    <Grid ShowGridLines="True">
+      <Grid.RowDefinitions>
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition></ColumnDefinition>
+        <ColumnDefinition></ColumnDefinition>
+        <ColumnDefinition></ColumnDefinition>
+      </Grid.ColumnDefinitions>
+    <Button Grid.Row="0" Grid.Column="0">Top Left</Button>
+    <Button Grid.Row="0" Grid.Column="1">Middle Left</Button>
+    <Button Grid.Row="1" Grid.Column="2">Bottom Right</Button>
+    <Button Grid.Row="1" Grid.Column="1">Bottom Middle</Button>
+    
+  </Grid>
+</Window>

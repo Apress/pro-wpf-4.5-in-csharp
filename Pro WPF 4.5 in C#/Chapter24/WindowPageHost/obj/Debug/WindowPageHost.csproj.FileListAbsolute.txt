@@ -1,0 +1,1 @@
+D:\Code\Pro WPF\Chapter24\WindowPageHost\bin\Debug\WindowPageHost.exe.config

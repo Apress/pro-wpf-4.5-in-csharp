@@ -1,0 +1,12 @@
+﻿<Window x:Class="WPFWindowLibrary.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="WPFWindowLibrary" Height="300" Width="300"
+    >
+  <StackPanel Margin="5">
+    <TextBlock Margin="5">Sample WPF Window</TextBlock>
+    <TextBox Margin="5">[type here]</TextBox>
+    <Button Margin="5" Click="Button_Click">Button</Button>
+    <Button Margin="5" Click="Button_Click">Button</Button>
+  </StackPanel>
+</Window>

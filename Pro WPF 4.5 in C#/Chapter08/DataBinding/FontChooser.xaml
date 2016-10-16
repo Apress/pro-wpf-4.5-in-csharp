@@ -1,0 +1,21 @@
+﻿<Window x:Class="DataBinding.FontChooser"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="FontChooser" Height="300" Width="300"
+    >
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="2*"></RowDefinition>
+      <RowDefinition Height="*"></RowDefinition>
+    </Grid.RowDefinitions>
+    <ListBox Grid.Row="0" ItemsSource="{x:Static Fonts.SystemFontFamilies}" Margin="5" Name="lstFonts"/>
+
+    <Grid Grid.Row="1"  Margin="5">
+      <TextBox  
+           FontFamily="{Binding ElementName=lstFonts, Path=SelectedItem}"
+           TextAlignment="Center" TextWrapping="Wrap">
+        The quick brown fox jumps over the lazy dog
+      </TextBox>
+    </Grid>
+  </Grid>
+</Window>

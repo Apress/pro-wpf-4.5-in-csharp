@@ -1,0 +1,22 @@
+﻿<Window x:Class="Drawing.ReusingGeometry"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ReusingGeometry" Height="300" Width="300"
+    >
+  <Window.Resources>
+    <GeometryGroup x:Key="Geometry">
+      <RectangleGeometry Rect="0 ,0 100 ,100"></RectangleGeometry>
+      <EllipseGeometry Center="150, 50" RadiusX="35" RadiusY="25"></EllipseGeometry>
+    </GeometryGroup>
+  </Window.Resources>
+
+  <Canvas>
+    <Path Fill="Yellow" Stroke="Blue" Margin="5" Canvas.Top="10" Canvas.Left="10"
+     Data="{StaticResource Geometry}">
+    </Path>
+    <Path Fill="Green" Stroke="Blue" Margin="5" Canvas.Top="150" Canvas.Left="10"
+     Data="{StaticResource Geometry}">
+    </Path>
+  </Canvas>
+
+</Window>

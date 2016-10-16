@@ -1,0 +1,28 @@
+﻿<Window x:Class="MenusAndToolbars.SidebarMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="SidebarMenu" Height="326.4" Width="456.8"
+    >
+    <DockPanel LastChildFill="True" Margin="5">
+      <Border BorderBrush="SteelBlue" BorderThickness="1">
+      <ScrollViewer DockPanel.Dock="Left">
+        <Menu>
+          <Menu.ItemsPanel>
+            <ItemsPanelTemplate>
+              <StackPanel Background="White"></StackPanel>
+            </ItemsPanelTemplate>
+          </Menu.ItemsPanel>      
+          
+          <MenuItem Header="File">
+            <MenuItem Header="New"></MenuItem>
+            <MenuItem Header="Open"></MenuItem>
+            <MenuItem Header="Save"></MenuItem>
+          </MenuItem>
+          <MenuItem Header="Help"></MenuItem>
+        </Menu>
+      </ScrollViewer>
+      </Border>
+
+      <TextBox Margin="5,0,0,0" TextWrapping="Wrap">Other content goes here.</TextBox>
+    </DockPanel>
+</Window>

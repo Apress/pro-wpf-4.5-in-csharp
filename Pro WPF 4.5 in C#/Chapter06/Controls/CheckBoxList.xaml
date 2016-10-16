@@ -1,0 +1,24 @@
+﻿<Window x:Class="Controls.CheckBoxList"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="CheckBoxList" Height="300" Width="300"
+    >
+  <Grid Margin="10">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+    </Grid.RowDefinitions>
+    
+    <ListBox Name="lst" SelectionChanged="lst_SelectionChanged"
+             CheckBox.Click="lst_SelectionChanged" >
+      <CheckBox Margin="3">Option 1</CheckBox>
+      <CheckBox Margin="3">Option 2</CheckBox>
+      <CheckBox Margin="3">Option 3</CheckBox>
+    </ListBox>
+    <StackPanel Grid.Row="1" Margin="0,10,0,0">
+      <TextBlock>Current selection: </TextBlock>
+      <TextBlock  Name="txtSelection" TextWrapping="Wrap"></TextBlock>
+      <Button Margin="0,10,0,0" Click="cmd_CheckAllItems">Examine All Items</Button>
+    </StackPanel>
+  </Grid>
+</Window>

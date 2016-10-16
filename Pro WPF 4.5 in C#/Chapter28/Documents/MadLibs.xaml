@@ -1,0 +1,41 @@
+﻿<Window x:Class="Documents.MadLibs"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MadLibs" Height="371.2" Width="380" Loaded="WindowLoaded"
+    >
+  
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition></RowDefinition>
+    </Grid.RowDefinitions>
+
+    <Grid Grid.Row="0" Name="gridWords" Margin="5">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"></ColumnDefinition>
+        <ColumnDefinition Width="*"></ColumnDefinition>
+      </Grid.ColumnDefinitions>
+    </Grid>
+
+  <Button Grid.Row="1" Margin="5" Click="cmdGenerate_Click">Generate</Button>
+  <FlowDocumentScrollViewer Grid.Row="2" Name="docViewer" Visibility="Hidden">
+    <FlowDocument Name="document">
+      <Paragraph FontSize="20" FontWeight="Bold">
+        Release Notes
+      </Paragraph>
+      <Paragraph>
+        These are the release <Span Tag="Plural Noun">notes</Span> for
+        <Span Tag="Proper Noun">Linux</Span> version 1.2.13.
+      </Paragraph>
+      <Paragraph>
+        Read them <Span Tag="Adverb">carefully</Span>, as they
+        tell you what this is all about, how to
+        <Span Tag="Verb">boot</Span> the
+        <Span Tag="Noun">kernel</Span>,
+        and what to do if something goes wrong.
+      </Paragraph>
+    </FlowDocument>
+  </FlowDocumentScrollViewer>
+  </Grid>
+</Window>

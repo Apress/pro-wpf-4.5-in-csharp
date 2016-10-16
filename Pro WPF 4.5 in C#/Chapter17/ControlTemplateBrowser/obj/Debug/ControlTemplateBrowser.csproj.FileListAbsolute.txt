@@ -1,0 +1,12 @@
+D:\Code\Pro WPF\Chapter17\ControlTemplateBrowser\bin\Debug\ControlTemplateBrowser.exe
+D:\Code\Pro WPF\Chapter17\ControlTemplateBrowser\bin\Debug\ControlTemplateBrowser.pdb
+D:\Code\Pro WPF\Chapter17\ControlTemplateBrowser\obj\Debug\Window1.baml
+D:\Code\Pro WPF\Chapter17\ControlTemplateBrowser\obj\Debug\Window1.g.cs
+D:\Code\Pro WPF\Chapter17\ControlTemplateBrowser\obj\Debug\App.g.cs
+D:\Code\Pro WPF\Chapter17\ControlTemplateBrowser\obj\Debug\ControlTemplateBrowser_MarkupCompile.cache
+D:\Code\Pro WPF\Chapter17\ControlTemplateBrowser\obj\Debug\ControlTemplateBrowser.g.resources
+D:\Code\Pro WPF\Chapter17\ControlTemplateBrowser\obj\Debug\ControlTemplateBrowser.Properties.Resources.resources
+D:\Code\Pro WPF\Chapter17\ControlTemplateBrowser\obj\Debug\ControlTemplateBrowser.csproj.GenerateResource.Cache
+D:\Code\Pro WPF\Chapter17\ControlTemplateBrowser\obj\Debug\ControlTemplateBrowser.exe
+D:\Code\Pro WPF\Chapter17\ControlTemplateBrowser\obj\Debug\ControlTemplateBrowser.pdb
+D:\Code\Pro WPF\Chapter17\ControlTemplateBrowser\bin\Debug\ControlTemplateBrowser.exe.config

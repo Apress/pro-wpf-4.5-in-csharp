@@ -1,0 +1,14 @@
+D:\Code\Pro WPF\Chapter17\SimpleWindow\bin\Debug\SimpleWindow.exe.config
+D:\Code\Pro WPF\Chapter17\SimpleWindow\bin\Debug\SimpleWindow.exe
+D:\Code\Pro WPF\Chapter17\SimpleWindow\bin\Debug\SimpleWindow.pdb
+D:\Code\Pro WPF\Chapter17\SimpleWindow\obj\Debug\VisualTreeDisplay.baml
+D:\Code\Pro WPF\Chapter17\SimpleWindow\obj\Debug\Window1.baml
+D:\Code\Pro WPF\Chapter17\SimpleWindow\obj\Debug\VisualTreeDisplay.g.cs
+D:\Code\Pro WPF\Chapter17\SimpleWindow\obj\Debug\Window1.g.cs
+D:\Code\Pro WPF\Chapter17\SimpleWindow\obj\Debug\App.g.cs
+D:\Code\Pro WPF\Chapter17\SimpleWindow\obj\Debug\SimpleWindow_MarkupCompile.cache
+D:\Code\Pro WPF\Chapter17\SimpleWindow\obj\Debug\SimpleWindow.g.resources
+D:\Code\Pro WPF\Chapter17\SimpleWindow\obj\Debug\SimpleWindow.Properties.Resources.resources
+D:\Code\Pro WPF\Chapter17\SimpleWindow\obj\Debug\SimpleWindow.csproj.GenerateResource.Cache
+D:\Code\Pro WPF\Chapter17\SimpleWindow\obj\Debug\SimpleWindow.exe
+D:\Code\Pro WPF\Chapter17\SimpleWindow\obj\Debug\SimpleWindow.pdb

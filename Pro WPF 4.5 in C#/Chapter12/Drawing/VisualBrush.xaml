@@ -1,0 +1,24 @@
+﻿<Window x:Class="Drawing.VisualBrush"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="VisualBrush" Height="300" Width="300"
+    >
+  <StackPanel Margin="3">
+    <Button Name="cmd" Margin="3" Padding="5">Is this a real button?</Button>
+    <Rectangle Margin="3" Height="{Binding ElementName=cmd,Path=ActualHeight}">
+      <Rectangle.Fill>
+        <VisualBrush Visual="{Binding ElementName=cmd}"></VisualBrush>
+      </Rectangle.Fill>
+    </Rectangle>
+    <Rectangle Margin="3" Height="50">
+      <Rectangle.Fill>
+        <VisualBrush Visual="{Binding ElementName=cmd}"></VisualBrush>
+      </Rectangle.Fill>
+    </Rectangle>
+    <Rectangle Margin="3" Height="150">
+      <Rectangle.Fill>
+        <VisualBrush Visual="{Binding ElementName=cmd}"></VisualBrush>
+      </Rectangle.Fill>
+    </Rectangle>
+  </StackPanel>
+</Window>

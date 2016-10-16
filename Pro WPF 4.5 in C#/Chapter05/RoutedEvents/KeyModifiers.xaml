@@ -1,0 +1,11 @@
+﻿<Window x:Class="RoutedEvents.KeyModifiers"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="KeyModifiers" Height="300" Width="300"
+    >
+  <StackPanel Margin="5">
+    <TextBox KeyDown="KeyEvent"></TextBox>
+    <TextBlock Name="lblInfo"></TextBlock>
+    <Button Click="CheckShift">Check Current Shift State</Button>
+  </StackPanel>
+</Window>

@@ -1,0 +1,15 @@
+﻿<Window x:Class="InteroperabilityWPF.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="InteroperabilityWPF" Height="300" Width="300"
+    >
+    <StackPanel Margin="5">
+      <Button Click="cmdShowModalWinForm_Click">Show a WinForm Modally</Button>
+      <Button Click="cmdShowWinForm_Click">Show a WinForm Modelessly</Button>
+      <Button Click="cmdEnableSupport_Click">Enable Modeless Suport for WinForms</Button>
+      <Button Click="cmdShowHostWinFormControl_Click">HostWinFormControl</Button>
+      <Button Click="cmdShowWPFMnemonic_Click">MnemonicTest (WPF)</Button>
+      <Button Click="cmdShowWinFormMnemonic_Click">MnemonicTest2 (WinForms)</Button>
+
+    </StackPanel>
+</Window>

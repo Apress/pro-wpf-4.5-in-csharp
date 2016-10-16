@@ -1,0 +1,8 @@
+D:\Code\Pro WPF\StoreDatabase\bin\Debug\store.xsd
+D:\Code\Pro WPF\StoreDatabase\bin\Debug\store.xml
+D:\Code\Pro WPF\StoreDatabase\bin\Debug\StoreDatabase.dll.config
+D:\Code\Pro WPF\StoreDatabase\bin\Debug\StoreDatabase.dll
+D:\Code\Pro WPF\StoreDatabase\bin\Debug\StoreDatabase.pdb
+D:\Code\Pro WPF\StoreDatabase\obj\Debug\StoreDatabase.dll
+D:\Code\Pro WPF\StoreDatabase\obj\Debug\StoreDatabase.pdb
+D:\Code\Pro WPF\StoreDatabase\obj\Debug\StoreDatabase.csprojResolveAssemblyReference.cache

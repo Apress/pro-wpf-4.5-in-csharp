@@ -1,0 +1,41 @@
+﻿<Window x:Class="Drawing.LineCaps"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="LineCaps" Height="333" Width="376"
+    >
+  <Grid Margin="15">
+    <Grid.RowDefinitions>
+      <RowDefinition></RowDefinition>
+      <RowDefinition></RowDefinition>
+      <RowDefinition></RowDefinition>
+      <RowDefinition></RowDefinition>
+
+    </Grid.RowDefinitions>
+
+    <Grid.ColumnDefinitions>      
+      <ColumnDefinition></ColumnDefinition>
+      <ColumnDefinition Width="Auto"></ColumnDefinition>
+    </Grid.ColumnDefinitions>
+    
+    <Polyline Stroke="Blue" StrokeThickness="15" StrokeEndLineCap="Flat" SnapsToDevicePixels="True"
+      Points="10,10 30,0 50,20 90,10 200,10" >
+    </Polyline>
+    <TextBlock Grid.Column="1">Flat Line Cap</TextBlock>
+
+    <Polyline Stroke="Blue" StrokeThickness="15" Grid.Row="1" StrokeEndLineCap="Square" SnapsToDevicePixels="True"
+      Points="10,10 30,0 50,20 90,10 200,10" >
+    </Polyline>
+    <TextBlock Grid.Row="1" Grid.Column="1">Square Line Cap</TextBlock>
+
+    <Polyline Stroke="Blue" StrokeThickness="15" Grid.Row="2" StrokeEndLineCap="Round" SnapsToDevicePixels="True"
+      Points="10,10 30,0 50,20 90,10 200,10" >
+    </Polyline>
+    <TextBlock Grid.Row="2" Grid.Column="1">Round Line Cap</TextBlock>
+
+    <Polyline Stroke="Blue" StrokeThickness="15" Grid.Row="3" StrokeEndLineCap="Triangle"  SnapsToDevicePixels="True"
+         Points="10,10 30,0 50,20 90,10 200,10" >
+    </Polyline>
+    <TextBlock Grid.Row="3" Grid.Column="1">Triangle Line Cap</TextBlock>    
+    </Grid>
+  
+</Window>

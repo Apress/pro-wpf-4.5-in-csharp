@@ -1,0 +1,12 @@
+﻿<Window x:Class="Multithreading.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Multithreading" Height="300" Width="300"
+    >
+  <StackPanel Margin="5">
+    <TextBox Name="txt">Text in a text box.</TextBox>
+    <Button Click="cmdBreakRules_Click">Break the Rules</Button>
+    <Button Click="cmdFollowRules_Click">Follow the Rules (with BeginInvoke)</Button>    
+    <Button Click="cmdBackgroundWorker_Click">Use the BackgroundWorker</Button>
+  </StackPanel>
+</Window>

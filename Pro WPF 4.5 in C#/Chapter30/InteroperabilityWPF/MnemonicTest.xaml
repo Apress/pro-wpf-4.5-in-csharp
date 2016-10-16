@@ -1,0 +1,19 @@
+﻿<Window x:Class="InteroperabilityWPF.MnemonicTest"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MnemonicTest" Height="300" Width="300"
+    xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+    >
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+      </Grid.RowDefinitions>
+      <Button Click="cmdClicked">Use Alt+_A</Button>
+      <WindowsFormsHost Grid.Row="1" >
+          <wf:Button Text="Use Alt+&amp;B" Click="cmdClicked"></wf:Button>        
+      </WindowsFormsHost>
+      <Button Grid.Row="2" Click="cmdClicked">Use Alt+_C</Button>
+    </Grid>
+</Window>

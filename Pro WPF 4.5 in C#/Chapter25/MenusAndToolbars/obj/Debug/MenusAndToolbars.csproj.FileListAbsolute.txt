@@ -1,0 +1,1 @@
+D:\Code\Pro WPF\Chapter25\MenusAndToolbars\bin\Debug\MenusAndToolbars.exe.config

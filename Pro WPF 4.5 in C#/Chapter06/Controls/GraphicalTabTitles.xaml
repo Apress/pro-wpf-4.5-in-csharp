@@ -1,0 +1,23 @@
+﻿<Window x:Class="Controls.GraphicalTabTitles"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="GraphicalTabTitles" Height="300" Width="300"
+    >
+  <TabControl Margin="5">
+    <TabItem>
+      <TabItem.Header>
+        <StackPanel>
+        <TextBlock Margin="3" >Image and Text Tab Title</TextBlock>
+        <Image Source="happyface.jpg" Stretch="None" />        
+        </StackPanel>
+      </TabItem.Header>
+      <StackPanel Margin="3">
+        <CheckBox Margin="3">Setting One</CheckBox>
+        <CheckBox Margin="3">Setting Two</CheckBox>
+        <CheckBox Margin="3">Setting Three</CheckBox>
+      </StackPanel>
+    </TabItem>
+    <TabItem Header="Tab Two"></TabItem>
+
+  </TabControl>
+</Window>

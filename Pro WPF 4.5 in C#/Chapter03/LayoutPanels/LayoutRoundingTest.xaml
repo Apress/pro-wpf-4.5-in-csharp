@@ -1,0 +1,25 @@
+﻿<Window x:Class="LayoutPanels.LayoutRoundingTest"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="LayoutRoundingTest" Height="300" Width="400">
+    <StackPanel>
+        <Grid UseLayoutRounding="False" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="No layout rounding:" TextWrapping="Wrap" FontSize="18"></TextBlock>
+            <Rectangle Grid.Column="1" Stroke="Red" StrokeThickness="3" Height="50" Width="150"></Rectangle>
+        </Grid>
+        
+        <Grid UseLayoutRounding="True" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="With layout rounding:" TextWrapping="Wrap" FontSize="18"></TextBlock>
+            <Rectangle Grid.Column="1" Stroke="Red" StrokeThickness="3" Height="50" Width="150"></Rectangle>
+        </Grid>        
+        
+    </StackPanel>
+</Window>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="SoundAndVideo">
+</Property><Property Name="Solution File" Value="D:\Code\Pro WPF\Chapter26\SoundAndVideo\SoundAndVideo.sln">
+</Property><Property Name="Date" Value="Wednesday, February 24, 2010">
+</Property><Property Name="Time" Value="0:03 AM">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="SoundAndVideo" Source="SoundAndVideo.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SoundAndVideo" Source="SoundAndVideo.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="SoundAndVideo.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="SoundAndVideo.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SoundAndVideo" Source="SoundAndVideo.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

@@ -1,0 +1,52 @@
+﻿<Window x:Class="Multithreading.BackgroundWorkerTest"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Multithreading" Height="323.2" Width="305.6"
+    xmlns:cm="clr-namespace:System.ComponentModel;assembly=System"
+    >
+    <Window.Resources>
+      <cm:BackgroundWorker x:Key="backgroundWorker"
+          WorkerReportsProgress="True" WorkerSupportsCancellation="True"
+          DoWork="backgroundWorker_DoWork" ProgressChanged="backgroundWorker_ProgressChanged" 
+          RunWorkerCompleted="backgroundWorker_RunWorkerCompleted"></cm:BackgroundWorker>
+    </Window.Resources>
+    <Grid Margin="5">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition></RowDefinition>
+        <RowDefinition Height="Auto"></RowDefinition>
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"></ColumnDefinition>
+        <ColumnDefinition></ColumnDefinition>
+      </Grid.ColumnDefinitions>
+      
+      
+      <TextBlock Margin="5">From:</TextBlock>
+      <TextBox Name="txtFrom" Grid.Column="1" Margin="5">1</TextBox>
+      <TextBlock Grid.Row="1" Margin="5">To:</TextBlock>
+      <TextBox Name="txtTo" Grid.Row="1" Grid.Column="1" Margin="5">500000</TextBox>
+
+      <StackPanel Orientation="Horizontal"
+              Grid.Row="2" Grid.Column="1">      
+      <Button Name="cmdFind"
+              Margin="5" Padding="3"
+              Click="cmdFind_Click">Find Primes</Button>
+      <Button Name="cmdCancel"
+              Margin="5" Padding="3" IsEnabled="False"
+              Click="cmdCancel_Click">Cancel</Button>
+      </StackPanel>
+      
+      <TextBlock Grid.Row="3" Margin="5">Results:</TextBlock>
+      <ListBox Name="lstPrimes" Grid.Row="3" Grid.Column="1" 
+               Margin="5"></ListBox>
+      
+
+      <ProgressBar Name="progressBar"
+               Grid.Row="4" Grid.ColumnSpan="2"
+               Margin="5" VerticalAlignment="Bottom" MinHeight="20" 
+               Minimum="0" Maximum="100" Height="20"></ProgressBar>
+    </Grid>
+</Window>

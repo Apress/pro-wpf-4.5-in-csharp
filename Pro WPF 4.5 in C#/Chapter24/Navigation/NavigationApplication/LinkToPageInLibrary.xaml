@@ -1,0 +1,14 @@
+﻿<Page x:Class="NavigationApplication.LinkToAssemblyPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="LinkToAssemblyPage"
+    >
+  <StackPanel Margin="3">
+    <TextBlock Margin="3" TextWrapping="Wrap">
+      This is a simple page.
+      Click <Hyperlink NavigateUri="/PageLibrary;component/SharedPage.xaml">here</Hyperlink> to go to a page in PageLibrary.
+    </TextBlock>
+
+
+  </StackPanel>
+</Page>
